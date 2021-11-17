@@ -1,0 +1,44 @@
+@font-face {
+    font-weight: 400;
+    font-family: "PT Sans";
+    src: url(../fonts/PT_Sans/PTSans-Regular.ttf);
+}
+@font-face {
+    font-weight: 700;
+    font-family: "PT Sans";
+    src: url(../fonts/PT_Sans/PTSans-Bold.ttf);
+}
+@font-face {
+    font-weight: 400;
+    font-family: "PT Sans Caption";
+    src: url(../fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf);
+}
+@font-face {
+    font-weight: 500;
+    font-family: "Brutal";
+    src: url(../fonts/Brutal_Type_Medium/Brutal-Type-Medium.ttf);
+}
+@font-face {
+    font-weight: 700;
+    font-family: "Brutal";
+    src: url(../fonts/Brutal_Type_Bold/Brutal-Type-Bold.ttf);
+}
+@font-face {
+    font-weight: 400;
+    font-family: "Brutal";
+    src: url(../fonts/Brutal_Bold_Regular/Brutal-Type-Regular.ttf);
+}
+body {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    color: #000000;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

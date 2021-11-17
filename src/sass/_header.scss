@@ -1,0 +1,141 @@
+.header {
+    /* .header_logo */
+
+    &_logo {
+        background-color: #223036;
+    }
+    &_logo-wrapper {
+        display: flex;
+
+        align-items: center;
+        min-height: 176px;
+        max-width: 100%;
+        position: relative;
+    }
+
+    /* .header_logo-wrapper */
+
+    &_logo-text {
+        font-family: PT Sans Caption;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+
+        margin: 0px 0px 0px 25px;
+        width: 660px;
+        color: #ffffff;
+    }
+    /* .header_logo-column */
+
+    &_logo-column {
+        position: relative;
+
+        text-align: center;
+        margin: 0px 25px 0px 45px;
+        padding: 38px 0px 0px 0px;
+        width: 370px;
+        height: 80px;
+    }
+
+    /* .header_logo-logo */
+
+    &_logo-logo {
+    }
+    &_logo-logo2 {
+        position: absolute;
+        top: 17px;
+        left: 2px;
+    }
+    /* .header_logo-output */
+    &_logo-button {
+        align-self: normal;
+        margin-top: 12px;
+        margin-right: 19px;
+    }
+
+    &_logo-output {
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 700;
+
+        border: none;
+        background-color: #223036;
+        color: #ffffff;
+    }
+
+    /* .header_nav */
+
+    &_nav {
+    }
+
+    /* .header_nav-wrapper */
+
+    &_nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 48px;
+    }
+
+    /* .header_nav-burger */
+    &_nav-burger {
+        margin: 0px 0px 0px 47px;
+        cursor: pointer;
+    }
+
+    &_nav-burger-item {
+        width: 17.17px;
+        height: 2px;
+        background-color: black;
+        margin: 3px 0;
+    }
+
+    /* .header_nav-list */
+
+    &_nav-list {
+        display: flex;
+        justify-content: space-between;
+
+        width: 467px;
+        margin-right: 590px;
+    }
+
+    /* .header_nav-item */
+
+    &_nav-item {
+        // width: 91px;
+        // height: 24px;
+        text-align: center;
+        margin: 0px 6px 0px;
+
+        :hover {
+            background-color: #faaf3f;
+            color: #ffffff;
+        }
+    }
+
+    &_nav-item a {
+        display: block;
+
+        font-family: "Brutal Type";
+        font-weight: 400;
+        font-size: 16px;
+
+        text-decoration: none;
+        color: #000000;
+        width: 91px;
+        height: 24px;
+    }
+    /* .header_nav-magnifier */
+
+    &_nav-magnifier {
+        margin: 0px 12px 0px 0px;
+    }
+}
+.first {
+}
+.second {
+}
+.third {
+}
