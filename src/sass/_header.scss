@@ -1,21 +1,25 @@
 .header {
-    /* .header_logo */
-
-    &_logo {
-        background-color: #223036;
-    }
-    &_logo-wrapper {
+    &__wrapper {
         display: flex;
 
         align-items: center;
         min-height: 176px;
         max-width: 100%;
         position: relative;
+        background-color: #223036;
     }
 
-    /* .header_logo-wrapper */
+    &__wrapper-logo {
+        position: relative;
 
-    &_logo-text {
+        text-align: center;
+        margin: 0px 25px 0px 45px;
+        // padding: 38px 0px 0px 0px;
+        // width: 370px;
+        //height: 80px;
+    }
+
+    &__wrapper-text {
         font-family: PT Sans Caption;
         font-size: 14px;
         font-weight: 400;
@@ -25,35 +29,22 @@
         width: 660px;
         color: #ffffff;
     }
-    /* .header_logo-column */
 
-    &_logo-column {
-        position: relative;
-
-        text-align: center;
-        margin: 0px 25px 0px 45px;
-        padding: 38px 0px 0px 0px;
-        width: 370px;
-        height: 80px;
+    &__wrapper-logo {
     }
-
-    /* .header_logo-logo */
-
-    &_logo-logo {
-    }
-    &_logo-logo2 {
+    &__wrapper-logo2 {
         position: absolute;
-        top: 17px;
-        left: 2px;
+        top: -22px;
+        left: 12px;
     }
-    /* .header_logo-output */
-    &_logo-button {
+
+    &__wrapper-button {
         align-self: normal;
         margin-top: 12px;
         margin-right: 19px;
     }
 
-    &_logo-output {
+    &__wrapper-output {
         font-family: "PT Sans";
         font-size: 15px;
         font-weight: 700;
@@ -63,14 +54,7 @@
         color: #ffffff;
     }
 
-    /* .header_nav */
-
-    &_nav {
-    }
-
-    /* .header_nav-wrapper */
-
-    &_nav-wrapper {
+    &__nav-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -78,22 +62,19 @@
         height: 48px;
     }
 
-    /* .header_nav-burger */
-    &_nav-burger {
+    &__nav-burger {
         margin: 0px 0px 0px 47px;
         cursor: pointer;
     }
 
-    &_nav-burger-item {
+    &__nav-burger-item {
         width: 17.17px;
         height: 2px;
         background-color: black;
         margin: 3px 0;
     }
 
-    /* .header_nav-list */
-
-    &_nav-list {
+    &__nav-list {
         display: flex;
         justify-content: space-between;
 
@@ -101,11 +82,7 @@
         margin-right: 590px;
     }
 
-    /* .header_nav-item */
-
-    &_nav-item {
-        // width: 91px;
-        // height: 24px;
+    &__nav-item {
         text-align: center;
         margin: 0px 6px 0px;
 
@@ -115,7 +92,7 @@
         }
     }
 
-    &_nav-item a {
+    &__nav-item a {
         display: block;
 
         font-family: "Brutal Type";
@@ -127,10 +104,12 @@
         width: 91px;
         height: 24px;
     }
-    /* .header_nav-magnifier */
 
-    &_nav-magnifier {
-        margin: 0px 12px 0px 0px;
+    &__nav-search {
+        // margin: 0px 12px 0px 0px;
+        background: url(../img/magnifier.svg) no-repeat center;
+        width: 48px;
+        height: 48px;
     }
 }
 .first {
