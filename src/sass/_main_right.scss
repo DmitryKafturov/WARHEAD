@@ -1,0 +1,218 @@
+@import "../sass/variables.scss";
+.right {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin: 0px 0px 0px 10px;
+        width: 251px;
+    }
+}
+.all_containers {
+    display: flex;
+    flex-direction: column;
+}
+.black-button {
+    :nth-child(1) {
+        float: left;
+
+        font-family: "Brutal Type";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+
+        box-sizing: border-box;
+        width: 92px;
+        height: 24px;
+        padding-top: 3px;
+        background: $light-black;
+        color: $white;
+        text-align: center;
+        border-radius: 3%;
+    }
+    :nth-child(2) {
+        float: right;
+
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.orange-button {
+    font-family: "Brutal Type";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    box-sizing: border-box;
+    width: 214px;
+    height: 32px;
+    background: $orange;
+    padding-top: 7px;
+    text-align: center;
+    color: $white;
+}
+
+.series {
+    &__container {
+        position: relative;
+
+        height: 442px;
+        box-shadow: 0px 0px 10px -5px;
+    }
+
+    &__app-button {
+        margin: 20px 17px 17px 20px;
+    }
+
+    &__title {
+        font-family: "Brutal Type";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+
+        margin: 0px 20px 26px 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0px 13px 0px 35px;
+        :nth-child(2) {
+            margin: 22px 0px;
+        }
+    }
+    &__list ::before {
+        content: "";
+        position: absolute;
+        top: 130px;
+        left: 21px;
+        width: 1px;
+        height: 252px;
+        background: url(../img/Line.svg) no-repeat center;
+    }
+    &__item {
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    &__item span::after {
+        content: "";
+        position: absolute;
+
+        left: 16px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: $grey;
+    }
+
+    &__link {
+        margin: 21px 17px 20px 20px;
+    }
+}
+
+.tests {
+    &__container {
+        height: 374px;
+        box-shadow: 0px 0px 10px -5px;
+    }
+
+    &__app-button {
+        margin: 20px 17px 17px 20px;
+    }
+
+    &__wrap-foto {
+        background: url(../img/tests_right.svg) no-repeat center;
+        width: 215px;
+        height: 238px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: "Brutal Type";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+
+        color: $white;
+        margin: 64px 18px 0px 20px;
+    }
+
+    &__views-wrap {
+        display: flex;
+        margin: 62px 17px 20px 17px;
+    }
+
+    &__link {
+        margin: 21px 17px 20px 20px;
+    }
+}
+
+.video {
+    &__container {
+        height: 270px;
+        box-shadow: 0px 0px 10px -5px;
+    }
+
+    &__app-button {
+        margin: 20px 17px 24px 20px;
+    }
+
+    &__video {
+        background: url(../img/video_right2.png) no-repeat center, url(../img/video_right.png) no-repeat center;
+        width: 214px;
+        height: 146px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 21px;
+
+        margin: 18px 0px 16px 20px;
+    }
+}
+.nvidia {
+    &__container {
+        height: 226px;
+        box-shadow: 0px 0px 10px -5px;
+        padding: 0px 20px 23px 17px;
+    }
+
+    &__app-button {
+        margin: 20px 0px 24px;
+    }
+
+    &__data {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-bottom: 10px;
+    }
+
+    &__time {
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+    }
+}

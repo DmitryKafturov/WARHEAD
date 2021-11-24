@@ -1,25 +1,28 @@
+@import "../sass/variables.scss";
+
 .header {
     &__wrapper {
         display: flex;
 
+        position: relative;
         align-items: center;
         min-height: 176px;
         max-width: 100%;
-        position: relative;
-        background-color: #223036;
+        background-color: $dark-blue;
     }
 
-    &__wrapper-logo {
+    &__logo {
         position: relative;
 
         text-align: center;
         margin: 0px 25px 0px 45px;
-        // padding: 38px 0px 0px 0px;
-        // width: 370px;
-        //height: 80px;
     }
-
-    &__wrapper-text {
+    &__logo2 {
+        position: absolute;
+        top: -22px;
+        left: 12px;
+    }
+    &__text {
         font-family: PT Sans Caption;
         font-size: 14px;
         font-weight: 400;
@@ -27,54 +30,48 @@
 
         margin: 0px 0px 0px 25px;
         width: 660px;
-        color: #ffffff;
+        color: $white;
     }
 
-    &__wrapper-logo {
-    }
-    &__wrapper-logo2 {
-        position: absolute;
-        top: -22px;
-        left: 12px;
-    }
-
-    &__wrapper-button {
+    &__button {
         align-self: normal;
         margin-top: 12px;
         margin-right: 19px;
     }
 
-    &__wrapper-output {
+    &__output {
         font-family: "PT Sans";
         font-size: 15px;
         font-weight: 700;
 
         border: none;
-        background-color: #223036;
-        color: #ffffff;
+        background-color: $dark-blue;
+        color: $white;
     }
-
-    &__nav-wrapper {
+}
+.nav {
+    &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        box-shadow: 0px 0px 9px 0px;
         height: 48px;
     }
 
-    &__nav-burger {
+    &__burger {
         margin: 0px 0px 0px 47px;
         cursor: pointer;
     }
 
-    &__nav-burger-item {
+    &__burger-item {
         width: 17.17px;
         height: 2px;
-        background-color: black;
+        background-color: $black;
         margin: 3px 0;
     }
 
-    &__nav-list {
+    &__list {
         display: flex;
         justify-content: space-between;
 
@@ -82,17 +79,17 @@
         margin-right: 590px;
     }
 
-    &__nav-item {
+    &__item {
         text-align: center;
         margin: 0px 6px 0px;
 
         :hover {
             background-color: #faaf3f;
-            color: #ffffff;
+            color: #494949;
         }
     }
 
-    &__nav-item a {
+    &__item a {
         display: block;
 
         font-family: "Brutal Type";
@@ -100,21 +97,15 @@
         font-size: 16px;
 
         text-decoration: none;
-        color: #000000;
+        color: $black;
         width: 91px;
         height: 24px;
     }
 
-    &__nav-search {
-        // margin: 0px 12px 0px 0px;
+    &__search {
         background: url(../img/magnifier.svg) no-repeat center;
         width: 48px;
         height: 48px;
+        cursor: pointer;
     }
-}
-.first {
-}
-.second {
-}
-.third {
 }
