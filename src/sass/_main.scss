@@ -1,0 +1,36 @@
+.main {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        max-width: 85.33%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    &__wrapper-title {
+        font-family: "PT Sans Caption";
+        font-weight: 400;
+        font-size: 28px;
+
+        box-sizing: border-box;
+        padding-top: 40px;
+        max-width: 85.33%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+        margin: 0px 11px 0px 11px;
+        &__wrapper {
+            max-width: 1024px;
+        }
+        &__wrapper-title {
+            max-width: 1024px;
+            height: 92px;
+            margin-left: 0;
+            padding-top: 28px;
+            letter-spacing: -1px;
+        }
+    }
+}

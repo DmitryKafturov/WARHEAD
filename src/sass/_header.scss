@@ -12,30 +12,27 @@
     }
 
     &__logo {
-        position: relative;
+        background: url(../img/Text-logo.png) no-repeat center, url(../img/border_orange.svg) no-repeat center;
 
-        text-align: center;
-        margin: 0px 25px 0px 45px;
+        width: 370px;
+        height: 80px;
+        margin: 0px 28px 0px 47px;
     }
-    &__logo2 {
-        position: absolute;
-        top: -22px;
-        left: 12px;
-    }
+
     &__text {
         font-family: PT Sans Caption;
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
 
-        margin: 0px 0px 0px 25px;
+        margin: 0px 0px 0px 28px;
         width: 660px;
         color: $white;
     }
 
     &__button {
         align-self: normal;
-        margin-top: 12px;
+        margin-top: 5px;
         margin-right: 19px;
     }
 
@@ -65,7 +62,7 @@
     }
 
     &__burger-item {
-        width: 17.17px;
+        width: 14px;
         height: 2px;
         background-color: $black;
         margin: 3px 0;
@@ -76,7 +73,7 @@
         justify-content: space-between;
 
         width: 467px;
-        margin-right: 590px;
+        margin-right: 555px;
     }
 
     &__item {
@@ -107,5 +104,41 @@
         width: 48px;
         height: 48px;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        max-width: 1024px;
+        &__wrapper {
+        }
+        &__logo {
+            margin: 0px 12px 0px 30px;
+        }
+
+        &__logo2 {
+            width: 370px;
+        }
+
+        &__text {
+            max-width: 550px;
+            margin: 0px 0px 0px 12px;
+        }
+
+        &__button {
+            margin-right: 5px;
+        }
+    }
+    .nav {
+        &__burger {
+            margin-left: 40px;
+        }
+
+        &__burger-item {
+            width: 12px;
+        }
+        &__list {
+            margin-right: 432px;
+        }
     }
 }
