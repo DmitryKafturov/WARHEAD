@@ -30,80 +30,77 @@
         color: $white;
     }
 
-    &__button {
-        align-self: normal;
-        margin-top: 5px;
-        margin-right: 19px;
-    }
-
     &__output {
         font-family: "PT Sans";
         font-size: 15px;
         font-weight: 700;
 
+        align-self: flex-start;
+        margin-top: 12px;
+        margin-right: 19px;
+
         border: none;
         background-color: $dark-blue;
         color: $white;
     }
-}
-.nav {
-    &__wrapper {
+
+    .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         box-shadow: 0px 0px 9px 0px;
         height: 48px;
-    }
 
-    &__burger {
-        margin: 0px 0px 0px 47px;
-        cursor: pointer;
-    }
-
-    &__burger-item {
-        width: 14px;
-        height: 2px;
-        background-color: $black;
-        margin: 3px 0;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-
-        width: 467px;
-        margin-right: 555px;
-    }
-
-    &__item {
-        text-align: center;
-        margin: 0px 6px 0px;
-
-        :hover {
-            background-color: #faaf3f;
-            color: #494949;
+        &__menu {
+            margin: 0px 0px 0px 47px;
+            cursor: pointer;
         }
-    }
 
-    &__item a {
-        display: block;
+        &__menu_item {
+            width: 14px;
+            height: 2px;
+            background-color: $black;
+            margin: 3px 0;
+        }
 
-        font-family: "Brutal Type";
-        font-weight: 400;
-        font-size: 16px;
+        &__list {
+            display: flex;
+            justify-content: space-between;
 
-        text-decoration: none;
-        color: $black;
-        width: 91px;
-        height: 24px;
-    }
+            width: 467px;
+            margin-right: 555px;
+        }
 
-    &__search {
-        background: url(../img/magnifier.svg) no-repeat center;
-        width: 48px;
-        height: 48px;
-        cursor: pointer;
+        &__item {
+            text-align: center;
+            margin: 0px 6px 0px;
+
+            :hover {
+                background-color: #faaf3f;
+                color: #494949;
+            }
+        }
+
+        &__item a {
+            display: block;
+
+            font-family: "Brutal Type";
+            font-weight: 400;
+            font-size: 16px;
+
+            text-decoration: none;
+            color: $black;
+            width: 91px;
+            height: 24px;
+        }
+
+        &__search {
+            background: url(../img/magnifier.svg) no-repeat center;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+        }
     }
 }
 
@@ -116,29 +113,24 @@
             margin: 0px 12px 0px 30px;
         }
 
-        &__logo2 {
-            width: 370px;
-        }
-
         &__text {
-            max-width: 550px;
+            max-width: 539px;
             margin: 0px 0px 0px 12px;
         }
+        &__output {
+            margin: 16px 16px 0px 0px;
+        }
+        .nav {
+            &__menu {
+                margin-left: 40px;
+            }
 
-        &__button {
-            margin-right: 5px;
-        }
-    }
-    .nav {
-        &__burger {
-            margin-left: 40px;
-        }
-
-        &__burger-item {
-            width: 12px;
-        }
-        &__list {
-            margin-right: 432px;
+            &__menu_item {
+                width: 12px;
+            }
+            &__list {
+                margin-right: 432px;
+            }
         }
     }
 }

@@ -1,65 +1,15 @@
 @import "../sass/variables.scss";
-.right {
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
-        width: 23.67%;
-        margin: 0px 0px 0px 10px;
-    }
-}
-.all_containers {
+.sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    width: 23.67%;
+    margin: 0px 0px 0px 10px;
 }
-.black-button {
-    :nth-child(1) {
-        float: left;
-
-        font-family: "Brutal Type";
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 18px;
-
-        text-transform: uppercase;
-        box-sizing: border-box;
-        background: $light-black;
-        width: 92px;
-        height: 24px;
-        padding-top: 3px;
-        text-align: center;
-        color: $white;
-        border-radius: 2px;
-    }
-    :nth-child(2) {
-        float: right;
-
-        font-family: "PT Sans";
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-    }
-}
-.orange-button {
-    font-family: "Brutal Type";
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-
-    box-sizing: border-box;
-    max-width: 214px;
-    height: 32px;
-    background: $orange;
-    margin: 0 auto;
-    padding-top: 7px;
-    text-align: center;
-    color: $white;
-    border-radius: 2px;
-}
-
 .series {
-    &__container {
+    &_aside {
         position: relative;
 
         width: 251px;
@@ -67,8 +17,7 @@
         box-shadow: 0px 0px 10px -5px;
     }
 
-    &__app-button {
-        margin: 20px 17px 17px 20px;
+    &__app-box {
     }
 
     &__title {
@@ -98,9 +47,9 @@
 
         height: 240px;
         border: 1px solid $grey;
-
         border-radius: 50%;
     }
+
     &__item {
         font-family: "PT Sans";
         font-weight: 400;
@@ -119,22 +68,67 @@
     }
 
     &__link {
-        margin: 21px 17px 20px 20px;
+        margin: 20px 17px 10px 20px;
     }
 }
+.container {
+    display: flex;
+    flex-direction: column;
 
+    box-shadow: 0px 0px 10px -5px;
+}
+.app-box {
+    margin: 20px 17px 17px 20px;
+
+    :nth-child(1) {
+        float: left;
+
+        font-family: "Brutal Type";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+
+        text-transform: uppercase;
+        box-sizing: border-box;
+        background: $light-black;
+        width: 92px;
+        height: 24px;
+        padding-top: 3px;
+        text-align: center;
+        color: $white;
+        border-radius: 2px;
+    }
+    :nth-child(2) {
+        float: right;
+
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.orange-link {
+    font-family: "Brutal Type";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    box-sizing: border-box;
+    max-width: 214px;
+    height: 32px;
+    background: $orange;
+    padding-top: 7px;
+    text-align: center;
+    color: $white;
+    border-radius: 2px;
+}
 .tests {
-    &__container {
-        width: 251px;
-        height: 374px;
-        box-shadow: 0px 0px 10px -5px;
+    width: 251px;
+    height: 374px;
+    &__app-box {
     }
 
-    &__app-button {
-        margin: 20px 17px 17px 20px;
-    }
-
-    &__wrap-foto {
+    &__wrap {
         background: url(../img/tests_right.svg) no-repeat center;
         width: 215px;
         height: 238px;
@@ -151,25 +145,18 @@
         color: $white;
         margin: 64px 18px 0px 20px;
     }
-
-    &__views-wrap {
-        display: flex;
+    &__socials {
         margin: 62px 17px 20px 17px;
     }
-
     &__link {
-        margin: 21px 17px 20px 20px;
+        margin: 20px 17px 20px 20px;
     }
 }
 
 .video {
-    &__container {
-        width: 251px;
-        height: 270px;
-        box-shadow: 0px 0px 10px -5px;
-    }
-
-    &__app-button {
+    width: 251px;
+    height: 270px;
+    &__app-box {
         margin: 20px 17px 24px 20px;
     }
 
@@ -190,15 +177,12 @@
     }
 }
 .nvidia {
-    &__container {
-        box-sizing: border-box;
-        width: 251px;
-        height: 226px;
-        box-shadow: 0px 0px 10px -5px;
-        padding: 0px 20px 23px 17px;
-    }
+    box-sizing: border-box;
+    width: 251px;
+    height: 226px;
+    padding: 0px 20px 23px 17px;
 
-    &__app-button {
+    &__app-box {
         margin: 20px 0px 24px;
     }
 
@@ -217,7 +201,7 @@
         font-size: 14px;
         line-height: 24px;
 
-        margin-bottom: px;
+        margin-bottom: 10px;
     }
 
     &__text {
@@ -225,30 +209,5 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
-    }
-}
-@media (max-width: 1024px) {
-    .right {
-        &__wrapper {
-            width: 25%;
-        }
-    }
-    .all_containers {
-        margin-bottom: -4px;
-    }
-    .series {
-        height: 445px;
-    }
-    .tests {
-        height: 377px;
-        &__title {
-            text-align: start;
-        }
-    }
-    .video {
-        height: 273px;
-    }
-    .nvidia {
-        height: 229px;
     }
 }
