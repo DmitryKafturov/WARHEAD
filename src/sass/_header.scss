@@ -6,9 +6,12 @@
 
         position: relative;
         align-items: center;
-        min-height: 176px;
+        height: 176px;
         max-width: 100%;
         background-color: $dark-blue;
+    }
+    &__logo-link {
+        display: none;
     }
 
     &__logo {
@@ -29,15 +32,17 @@
         width: 660px;
         color: $white;
     }
-
+    &__search-mobil {
+        display: none;
+    }
     &__output {
         font-family: "PT Sans";
         font-size: 15px;
         font-weight: 700;
 
         align-self: flex-start;
-        margin-top: 12px;
-        margin-right: 19px;
+        margin-top: 10px;
+        margin-left: 10px;
 
         border: none;
         background-color: $dark-blue;
@@ -57,7 +62,7 @@
             cursor: pointer;
         }
 
-        &__menu_item {
+        &__menu-item {
             width: 14px;
             height: 2px;
             background-color: $black;
@@ -68,8 +73,7 @@
             display: flex;
             justify-content: space-between;
 
-            width: 467px;
-            margin-right: 555px;
+            margin-left: 22px;
         }
 
         &__item {
@@ -96,10 +100,14 @@
         }
 
         &__search {
-            background: url(../img/magnifier.svg) no-repeat center;
+            background: url(../img/magnifier.svg) no-repeat 22px;
             width: 48px;
             height: 48px;
-            cursor: pointer;
+            margin-left: auto;
+            border: none;
+        }
+        &__search-tablet {
+            display: none;
         }
     }
 }
@@ -107,8 +115,8 @@
 @media (max-width: 1024px) {
     .header {
         max-width: 1024px;
-        &__wrapper {
-        }
+        margin: 0 auto;
+
         &__logo {
             margin: 0px 12px 0px 30px;
         }
@@ -118,18 +126,146 @@
             margin: 0px 0px 0px 12px;
         }
         &__output {
-            margin: 16px 16px 0px 0px;
+            margin: 10px 0px 0px 5px;
         }
         .nav {
             &__menu {
                 margin-left: 40px;
             }
 
-            &__menu_item {
+            &__menu-item {
                 width: 12px;
             }
             &__list {
-                margin-right: 432px;
+                margin-left: 15px;
+            }
+
+            &__search {
+                background-position: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        max-width: 768px;
+        margin: 0 auto;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__menu-tablet {
+            align-self: flex-start;
+            background: url(../img/header_menu_tablet.svg) no-repeat center;
+            width: 19px;
+            height: 16px;
+            margin: 16px 0px 0px 16px;
+        }
+
+        &__logo-link {
+            display: none;
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__output {
+            margin: 10px 10px 0px 0px;
+        }
+
+        &__nav {
+        }
+
+        .nav {
+            &__menu {
+                display: none;
+            }
+
+            &__menu-item {
+            }
+
+            &__list {
+                width: 635px;
+                margin: 0;
+            }
+
+            &__item {
+            }
+            &__search {
+                background: none;
+                width: 80px;
+            }
+            &__search-tablet {
+                font-family: "Brutal Type";
+                font-weight: 400;
+                font-size: 16px;
+
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        max-width: 320px;
+        &__wrapper {
+            max-height: 48px;
+        }
+
+        &__logo-link {
+            display: block;
+            margin-right: auto;
+            margin-left: 20px;
+        }
+
+        &__logo-mobil {
+            background: url(../img/mobil_logo.svg) no-repeat center, url(../img/mobil_logo1.svg) no-repeat center;
+            width: 35px;
+            height: 34px;
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__search-mobil {
+            display: block;
+
+            background: url(../img/mobil_search.svg) no-repeat center;
+            margin-left: auto;
+            margin-right: 8px;
+            width: 15px;
+            height: 15px;
+            border: none;
+        }
+        &__output {
+            align-self: normal;
+
+            margin: 0;
+            margin-right: 16px;
+            padding: 0;
+        }
+
+        .nav {
+            &__list {
+                margin: 0px 10px 0px 10px;
+            }
+            &__item {
+                margin: 0;
+            }
+
+            &__item a {
+                font-family: "PT Sans Caption";
+                font-weight: 400;
+                font-size: 14px;
+
+                width: 60px;
+            }
+
+            &__search {
+                display: none;
             }
         }
     }

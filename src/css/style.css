@@ -8,9 +8,12 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 176px;
+  height: 176px;
   max-width: 100%;
   background-color: #223036; }
+
+.header__logo-link {
+  display: none; }
 
 .header__logo {
   background: url(../img/Text-logo.png) no-repeat center, url(../img/border_orange.svg) no-repeat center;
@@ -27,6 +30,9 @@
   width: 660px;
   color: #ffffff; }
 
+.header__search-mobil {
+  display: none; }
+
 .header__output {
   font-family: "PT Sans";
   font-size: 15px;
@@ -34,8 +40,8 @@
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
-  margin-top: 12px;
-  margin-right: 19px;
+  margin-top: 10px;
+  margin-left: 10px;
   border: none;
   background-color: #223036;
   color: #ffffff; }
@@ -59,7 +65,7 @@
   .header .nav__menu {
     margin: 0px 0px 0px 47px;
     cursor: pointer; }
-  .header .nav__menu_item {
+  .header .nav__menu-item {
     width: 14px;
     height: 2px;
     background-color: #000000;
@@ -73,8 +79,7 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 467px;
-    margin-right: 555px; }
+    margin-left: 22px; }
   .header .nav__item {
     text-align: center;
     margin: 0px 6px 0px; }
@@ -91,27 +96,116 @@
     width: 91px;
     height: 24px; }
   .header .nav__search {
-    background: url(../img/magnifier.svg) no-repeat center;
+    background: url(../img/magnifier.svg) no-repeat 22px;
     width: 48px;
     height: 48px;
-    cursor: pointer; }
+    margin-left: auto;
+    border: none; }
+  .header .nav__search-tablet {
+    display: none; }
 
 @media (max-width: 1024px) {
   .header {
-    max-width: 1024px; }
+    max-width: 1024px;
+    margin: 0 auto; }
     .header__logo {
       margin: 0px 12px 0px 30px; }
     .header__text {
       max-width: 539px;
       margin: 0px 0px 0px 12px; }
     .header__output {
-      margin: 16px 16px 0px 0px; }
+      margin: 10px 0px 0px 5px; }
     .header .nav__menu {
       margin-left: 40px; }
-    .header .nav__menu_item {
+    .header .nav__menu-item {
       width: 12px; }
     .header .nav__list {
-      margin-right: 432px; } }
+      margin-left: 15px; }
+    .header .nav__search {
+      background-position: 12px; } }
+
+@media (max-width: 768px) {
+  .header {
+    max-width: 768px;
+    margin: 0 auto; }
+    .header__wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .header__menu-tablet {
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+      background: url(../img/header_menu_tablet.svg) no-repeat center;
+      width: 19px;
+      height: 16px;
+      margin: 16px 0px 0px 16px; }
+    .header__logo-link {
+      display: none; }
+    .header__text {
+      display: none; }
+    .header__output {
+      margin: 10px 10px 0px 0px; }
+    .header .nav__menu {
+      display: none; }
+    .header .nav__list {
+      width: 635px;
+      margin: 0; }
+    .header .nav__search {
+      background: none;
+      width: 80px; }
+    .header .nav__search-tablet {
+      font-family: "Brutal Type";
+      font-weight: 400;
+      font-size: 16px;
+      display: block; } }
+
+@media (max-width: 320px) {
+  .header {
+    max-width: 320px; }
+    .header__wrapper {
+      max-height: 48px; }
+    .header__logo-link {
+      display: block;
+      margin-right: auto;
+      margin-left: 20px; }
+    .header__logo-mobil {
+      background: url(../img/mobil_logo.svg) no-repeat center, url(../img/mobil_logo1.svg) no-repeat center;
+      width: 35px;
+      height: 34px; }
+    .header__logo {
+      display: none; }
+    .header__search-mobil {
+      display: block;
+      background: url(../img/mobil_search.svg) no-repeat center;
+      margin-left: auto;
+      margin-right: 8px;
+      width: 15px;
+      height: 15px;
+      border: none; }
+    .header__output {
+      -webkit-align-self: normal;
+          -ms-flex-item-align: normal;
+              align-self: normal;
+      margin: 0;
+      margin-right: 16px;
+      padding: 0; }
+    .header .nav__list {
+      margin: 0px 10px 0px 10px; }
+    .header .nav__item {
+      margin: 0; }
+    .header .nav__item a {
+      font-family: "PT Sans Caption";
+      font-weight: 400;
+      font-size: 14px;
+      width: 60px; }
+    .header .nav__search {
+      display: none; } }
 
 @font-face {
   font-weight: 400;
@@ -167,40 +261,40 @@ a {
   text-decoration: none;
   color: #000000; }
 
-.main__body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  max-width: 85.33%;
-  margin: 0 auto;
-  margin-bottom: 100px; }
-
-.main__title {
-  font-family: "PT Sans Caption";
-  font-weight: 400;
-  font-size: 28px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-top: 40px;
-  max-width: 85.33%;
-  height: 100px;
-  margin: 0 auto; }
-
-@media (max-width: 1024px) {
-  .main {
-    margin: 0px 11px 0px 11px; }
-    .main__body {
-      max-width: 1024px; }
-    .main__title {
-      max-width: 1024px;
-      height: 92px;
-      margin-left: 0;
-      padding-top: 28px;
-      letter-spacing: -1px; } }
+.main {
+  display: none; }
+  .main__body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    max-width: 85.33%;
+    margin: 0 auto;
+    margin-bottom: 100px; }
+  .main__title {
+    font-family: "PT Sans Caption";
+    font-weight: 400;
+    font-size: 28px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 40px;
+    max-width: 85.33%;
+    height: 100px;
+    margin: 0 auto; }
+  @media (max-width: 1024px) {
+    .main {
+      margin: 0px 11px 0px 11px; }
+      .main__body {
+        max-width: 1024px; }
+      .main__title {
+        max-width: 1024px;
+        height: 92px;
+        margin-left: 0;
+        padding-top: 28px;
+        letter-spacing: -1px; } }
 
 .main__articles {
   max-width: 73.43%;
