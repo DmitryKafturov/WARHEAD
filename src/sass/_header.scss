@@ -114,7 +114,7 @@
 
 @media (max-width: 1024px) {
     .header {
-        max-width: 1024px;
+        width: 1024px;
         margin: 0 auto;
 
         &__logo {
@@ -148,7 +148,7 @@
 }
 @media (max-width: 768px) {
     .header {
-        max-width: 768px;
+        width: 768px;
         margin: 0 auto;
         &__wrapper {
             display: flex;
@@ -174,24 +174,16 @@
             margin: 10px 10px 0px 0px;
         }
 
-        &__nav {
-        }
-
         .nav {
             &__menu {
                 display: none;
             }
 
-            &__menu-item {
-            }
-
             &__list {
-                width: 635px;
+                max-width: 635px;
                 margin: 0;
             }
 
-            &__item {
-            }
             &__search {
                 background: none;
                 width: 80px;
@@ -209,7 +201,7 @@
 
 @media (max-width: 320px) {
     .header {
-        max-width: 320px;
+        width: 320px;
         &__wrapper {
             max-height: 48px;
         }
@@ -241,7 +233,7 @@
             border: none;
         }
         &__output {
-            align-self: normal;
+            align-self: center;
 
             margin: 0;
             margin-right: 16px;
