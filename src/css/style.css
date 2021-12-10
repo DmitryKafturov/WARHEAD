@@ -17,8 +17,8 @@
 
 .header__logo {
   background: url(../img/Text-logo.png) no-repeat center, url(../img/border_orange.svg) no-repeat center;
-  width: 370px;
-  height: 80px;
+  min-width: 370px;
+  min-height: 80px;
   margin: 0px 28px 0px 47px; }
 
 .header__text {
@@ -27,11 +27,7 @@
   font-weight: 400;
   line-height: 22px;
   margin: 0px 0px 0px 28px;
-  width: 660px;
   color: #ffffff; }
-
-.header__search-mobil {
-  display: none; }
 
 .header__output {
   font-family: "PT Sans";
@@ -40,8 +36,7 @@
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 16px 16px 0px 10px;
   border: none;
   background-color: #223036;
   color: #ffffff; }
@@ -63,8 +58,10 @@
           box-shadow: 0px 0px 9px 0px;
   height: 48px; }
   .header .nav__menu {
-    margin: 0px 0px 0px 47px;
-    cursor: pointer; }
+    background: url(../img/nav_menu_desktop.svg) no-repeat center;
+    width: 14px;
+    height: 12px;
+    margin-left: 47px; }
   .header .nav__menu-item {
     width: 14px;
     height: 2px;
@@ -93,10 +90,9 @@
     font-size: 16px;
     text-decoration: none;
     color: #000000;
-    width: 91px;
-    height: 24px; }
+    padding: 5px 20px; }
   .header .nav__search {
-    background: url(../img/magnifier.svg) no-repeat 22px;
+    background: url(../img/search.svg) no-repeat 22px;
     width: 48px;
     height: 48px;
     margin-left: auto;
@@ -104,138 +100,138 @@
   .header .nav__search-tablet {
     display: none; }
 
-@media (max-width: 1024px) {
-  .header {
-    width: 1024px;
-    margin: 0 auto; }
-    .header__logo {
-      margin: 0px 12px 0px 30px; }
-    .header__text {
-      max-width: 539px;
-      margin: 0px 0px 0px 12px; }
-    .header__output {
-      margin: 10px 0px 0px 5px; }
-    .header .nav__menu {
-      margin-left: 40px; }
-    .header .nav__menu-item {
-      width: 12px; }
-    .header .nav__list {
-      margin-left: 15px; }
-    .header .nav__search {
-      background-position: 12px; } }
+@media (max-width: 1100px) {
+  .header__logo {
+    margin: 0px 12px 0px 30px; }
+  .header__text {
+    margin: 0px 0px 0px 12px; }
+  .header__output {
+    margin: 16px 16px 0px 5px; }
+  .header .nav__menu {
+    margin-left: 40px; }
+  .header .nav__menu-item {
+    width: 12px; }
+  .header .nav__list {
+    margin-left: 15px; }
+  .header .nav__search {
+    margin-right: 10px; } }
 
-@media (max-width: 768px) {
-  .header {
-    width: 768px;
-    margin: 0 auto; }
-    .header__wrapper {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .header__menu-tablet {
-      -webkit-align-self: flex-start;
-          -ms-flex-item-align: start;
-              align-self: flex-start;
-      background: url(../img/header_menu_tablet.svg) no-repeat center;
-      width: 19px;
-      height: 16px;
-      margin: 16px 0px 0px 16px; }
-    .header__logo-link {
-      display: none; }
-    .header__text {
-      display: none; }
-    .header__output {
-      margin: 10px 10px 0px 0px; }
-    .header .nav__menu {
-      display: none; }
-    .header .nav__list {
-      max-width: 635px;
-      margin: 0; }
-    .header .nav__search {
-      background: none;
-      width: 80px; }
-    .header .nav__search-tablet {
-      font-family: "Brutal Type";
-      font-weight: 400;
-      font-size: 16px;
-      display: block; } }
+@media (max-width: 950px) {
+  .header__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header__logo {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 60px; }
+  .header__logo-link {
+    display: none; }
+  .header__text {
+    display: none; }
+  .header__output {
+    margin: 10px 10px 0px 0px; }
+  .header .nav__menu {
+    position: absolute;
+    top: 16px;
+    left: -25px;
+    background: url(../img/header_menu_tablet.svg) no-repeat center;
+    width: 19px;
+    height: 16px; }
+  .header .nav__list {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0; }
+  .header .nav__search {
+    background: none;
+    width: 100px; }
+  .header .nav__search-tablet {
+    display: block;
+    font-family: "Brutal Type";
+    font-weight: 400;
+    font-size: 16px; } }
 
-@media (max-width: 320px) {
-  .header {
-    width: 320px; }
-    .header__wrapper {
-      max-height: 48px; }
-    .header__logo-link {
-      display: block;
-      margin-right: auto;
-      margin-left: 20px; }
-    .header__logo-mobil {
-      background: url(../img/mobil_logo.svg) no-repeat center, url(../img/mobil_logo1.svg) no-repeat center;
-      width: 35px;
-      height: 34px; }
-    .header__logo {
-      display: none; }
-    .header__search-mobil {
-      display: block;
-      background: url(../img/mobil_search.svg) no-repeat center;
-      margin-left: auto;
-      margin-right: 8px;
-      width: 15px;
-      height: 15px;
-      border: none; }
-    .header__output {
-      -webkit-align-self: center;
-          -ms-flex-item-align: center;
-              align-self: center;
-      margin: 0;
-      margin-right: 16px;
-      padding: 0; }
-    .header .nav__list {
-      margin: 0px 10px 0px 10px; }
-    .header .nav__item {
-      margin: 0; }
-    .header .nav__item a {
-      font-family: "PT Sans Caption";
-      font-weight: 400;
-      font-size: 14px;
-      width: 60px; }
-    .header .nav__search {
+@media (max-width: 600px) {
+  .header__wrapper {
+    max-height: 48px; }
+  .header__logo-link {
+    display: block;
+    background: url(../img/mobil_logo.svg) no-repeat center, url(../img/mobil_logo1.svg) no-repeat center;
+    width: 35px;
+    height: 34px;
+    margin-right: auto;
+    margin-left: 54px; }
+  .header__logo {
+    display: none; }
+  .header__output {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin: 0;
+    margin-right: 16px;
+    padding: 0; }
+  .header .nav__list {
+    margin: 0px 10px 0px 10px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .header .nav__item {
+    margin: 0; }
+  .header .nav__item a {
+    font-family: "PT Sans Caption";
+    font-weight: 400;
+    font-size: 14px;
+    padding: 2px 6px; }
+  .header .nav__search {
+    background: url(../img/mobil_search.svg) no-repeat center;
+    position: absolute;
+    top: 0;
+    right: 5px; }
+    .header .nav__search span {
       display: none; } }
 
 @font-face {
   font-weight: 400;
   font-family: "PT Sans";
-  src: url(../fonts/PT_Sans/PTSans-Regular.ttf); }
+  src: url(../fonts/PTSans/Regular/PTSansRegular.woff2) format("woff2"), url(../fonts/PTSans/Regular/PTSansRegular.woff) format("woff"); }
 
 @font-face {
   font-weight: 700;
   font-family: "PT Sans";
-  src: url(../fonts/PT_Sans/PTSans-Bold.ttf); }
+  src: url(../fonts/PTSans/Bold/PTSansBold.woff2) format("woff2"), url(../fonts/PTSans/Bold/PTSansBold.woff) format("woff"); }
 
 @font-face {
   font-weight: 400;
   font-family: "PT Sans Caption";
-  src: url(../fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf); }
+  src: url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff2) format("woff2"), url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff) format(woff); }
 
 @font-face {
   font-weight: 500;
   font-family: "Brutal";
-  src: url(../fonts/Brutal_Type_Medium/Brutal-Type-Medium.ttf); }
+  src: url(../fonts/Brutal/Medium/BrutalMedium.woff2) format("woff2"), url(../fonts/Brutal/Medium/BrutalMedium.woff) format("woff"); }
 
 @font-face {
   font-weight: 700;
   font-family: "Brutal";
-  src: url(../fonts/Brutal_Type_Bold/Brutal-Type-Bold.ttf); }
+  src: url(../fonts/Brutal/Bold/BrutalBold.woff2) format("woff2"), url(../fonts/Brutal/Bold/BrutalBold.woff) format("woff"); }
 
 @font-face {
   font-weight: 400;
   font-family: "Brutal";
-  src: url(../fonts/Brutal_Bold_Regular/Brutal-Type-Regular.ttf); }
+  src: url(../fonts/Brutal/Regular/BrutalRegular.woff2) format("woff2"), url(../fonts/Brutal/Regular/BrutalRegular.woff) format("woff"); }
 
 body {
   font-family: "PT Sans", Arial, sans-serif;
@@ -243,7 +239,8 @@ body {
   line-height: 22px;
   font-style: normal;
   color: #000000;
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto; }
 
 .body__wrapper {

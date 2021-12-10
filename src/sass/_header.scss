@@ -17,8 +17,8 @@
     &__logo {
         background: url(../img/Text-logo.png) no-repeat center, url(../img/border_orange.svg) no-repeat center;
 
-        width: 370px;
-        height: 80px;
+        min-width: 370px;
+        min-height: 80px;
         margin: 0px 28px 0px 47px;
     }
 
@@ -29,21 +29,16 @@
         line-height: 22px;
 
         margin: 0px 0px 0px 28px;
-        width: 660px;
         color: $white;
     }
-    &__search-mobil {
-        display: none;
-    }
+
     &__output {
         font-family: "PT Sans";
         font-size: 15px;
         font-weight: 700;
 
         align-self: flex-start;
-        margin-top: 10px;
-        margin-left: 10px;
-
+        margin: 16px 16px 0px 10px;
         border: none;
         background-color: $dark-blue;
         color: $white;
@@ -58,8 +53,10 @@
         height: 48px;
 
         &__menu {
-            margin: 0px 0px 0px 47px;
-            cursor: pointer;
+            background: url(../img/nav_menu_desktop.svg) no-repeat center;
+            width: 14px;
+            height: 12px;
+            margin-left: 47px;
         }
 
         &__menu-item {
@@ -81,7 +78,7 @@
             margin: 0px 6px 0px;
 
             :hover {
-                background-color: #faaf3f;
+                background-color: $orange;
                 color: #494949;
             }
         }
@@ -95,12 +92,11 @@
 
             text-decoration: none;
             color: $black;
-            width: 91px;
-            height: 24px;
+            padding: 5px 20px;
         }
 
         &__search {
-            background: url(../img/magnifier.svg) no-repeat 22px;
+            background: url(../img/search.svg) no-repeat 22px;
             width: 48px;
             height: 48px;
             margin-left: auto;
@@ -112,21 +108,17 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .header {
-        width: 1024px;
-        margin: 0 auto;
-
         &__logo {
             margin: 0px 12px 0px 30px;
         }
 
         &__text {
-            max-width: 539px;
             margin: 0px 0px 0px 12px;
         }
         &__output {
-            margin: 10px 0px 0px 5px;
+            margin: 16px 16px 0px 5px;
         }
         .nav {
             &__menu {
@@ -141,31 +133,24 @@
             }
 
             &__search {
-                background-position: 12px;
+                margin-right: 10px;
             }
         }
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .header {
-        width: 768px;
-        margin: 0 auto;
         &__wrapper {
             display: flex;
             justify-content: space-between;
         }
-        &__menu-tablet {
-            align-self: flex-start;
-            background: url(../img/header_menu_tablet.svg) no-repeat center;
-            width: 19px;
-            height: 16px;
-            margin: 16px 0px 0px 16px;
+        &__logo {
+            flex: 1;
+            margin-left: 60px;
         }
-
         &__logo-link {
             display: none;
         }
-
         &__text {
             display: none;
         }
@@ -176,62 +161,57 @@
 
         .nav {
             &__menu {
-                display: none;
+                position: absolute;
+                top: 16px;
+                left: -25px;
+
+                background: url(../img/header_menu_tablet.svg) no-repeat center;
+                width: 19px;
+                height: 16px;
             }
 
             &__list {
-                max-width: 635px;
+                justify-content: space-around;
+                flex: 1;
+
                 margin: 0;
             }
 
             &__search {
                 background: none;
-                width: 80px;
+                width: 100px;
             }
             &__search-tablet {
+                display: block;
+
                 font-family: "Brutal Type";
                 font-weight: 400;
                 font-size: 16px;
-
-                display: block;
             }
         }
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
     .header {
-        width: 320px;
         &__wrapper {
             max-height: 48px;
         }
 
         &__logo-link {
             display: block;
-            margin-right: auto;
-            margin-left: 20px;
-        }
 
-        &__logo-mobil {
             background: url(../img/mobil_logo.svg) no-repeat center, url(../img/mobil_logo1.svg) no-repeat center;
             width: 35px;
             height: 34px;
+            margin-right: auto;
+            margin-left: 54px;
         }
 
         &__logo {
             display: none;
         }
 
-        &__search-mobil {
-            display: block;
-
-            background: url(../img/mobil_search.svg) no-repeat center;
-            margin-left: auto;
-            margin-right: 8px;
-            width: 15px;
-            height: 15px;
-            border: none;
-        }
         &__output {
             align-self: center;
 
@@ -243,6 +223,7 @@
         .nav {
             &__list {
                 margin: 0px 10px 0px 10px;
+                flex: 1;
             }
             &__item {
                 margin: 0;
@@ -253,11 +234,18 @@
                 font-weight: 400;
                 font-size: 14px;
 
-                width: 60px;
+                padding: 2px 6px;
             }
 
             &__search {
-                display: none;
+                background: url(../img/mobil_search.svg) no-repeat center;
+
+                position: absolute;
+                top: 0;
+                right: 5px;
+                span {
+                    display: none;
+                }
             }
         }
     }
