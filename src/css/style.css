@@ -127,11 +127,12 @@
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .header__logo {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    margin-left: 60px; }
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 0; }
   .header__logo-link {
     display: none; }
   .header__text {
@@ -144,7 +145,8 @@
     left: -25px;
     background: url(../img/header_menu_tablet.svg) no-repeat center;
     width: 19px;
-    height: 16px; }
+    height: 16px;
+    cursor: pointer; }
   .header .nav__list {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -156,14 +158,16 @@
     margin: 0; }
   .header .nav__search {
     background: none;
-    width: 100px; }
+    min-width: 100px;
+    margin: 0;
+    padding: 5px 20px; }
   .header .nav__search-tablet {
     display: block;
     font-family: "Brutal Type";
     font-weight: 400;
     font-size: 16px; } }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .header__wrapper {
     max-height: 48px; }
   .header__logo-link {
@@ -196,10 +200,12 @@
     font-size: 14px;
     padding: 2px 6px; }
   .header .nav__search {
-    background: url(../img/mobil_search.svg) no-repeat center;
     position: absolute;
     top: 0;
-    right: 5px; }
+    right: 40px;
+    background: url(../img/mobil_search.svg) no-repeat center;
+    min-width: 50px;
+    padding: 0; }
     .header .nav__search span {
       display: none; } }
 
@@ -216,7 +222,7 @@
 @font-face {
   font-weight: 400;
   font-family: "PT Sans Caption";
-  src: url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff2) format("woff2"), url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff) format(woff); }
+  src: url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff2) format("woff2"), url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff) format("woff"); }
 
 @font-face {
   font-weight: 500;
