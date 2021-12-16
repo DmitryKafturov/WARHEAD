@@ -61,7 +61,8 @@
     background: url(../img/nav_menu_desktop.svg) no-repeat center;
     width: 14px;
     height: 12px;
-    margin-left: 47px; }
+    margin-left: 47px;
+    cursor: pointer; }
   .header .nav__menu-item {
     width: 14px;
     height: 2px;
