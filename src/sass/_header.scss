@@ -1,0 +1,243 @@
+@import "../sass/variables.scss";
+
+.header {
+    &__wrapper {
+        display: flex;
+
+        position: relative;
+        align-items: center;
+        height: 176px;
+        max-width: 100%;
+        background-color: $dark-blue;
+    }
+    &__logo-link {
+        display: none;
+    }
+    &__logo {
+        background: url(../img/Text-logo.png) no-repeat center, url(../img/border_orange.svg) no-repeat center;
+
+        min-width: 370px;
+        min-height: 80px;
+        margin: 0px 28px 0px 47px;
+    }
+    &__text {
+        font-family: PT Sans Caption;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+
+        margin: 0px 0px 0px 28px;
+        color: $white;
+    }
+    &__login {
+        align-self: flex-start;
+
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 700;
+
+        margin: 16px 16px 0px 10px;
+        border: none;
+        background-color: $dark-blue;
+        color: $white;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        box-shadow: 0px 0px 9px 0px;
+        height: 48px;
+        &__menu {
+            background: url(../img/nav_menu_desktop.svg) no-repeat center;
+            width: 14px;
+            height: 12px;
+            margin-left: 47px;
+            cursor: pointer;
+        }
+        &__menu-item {
+            background-color: $black;
+            width: 14px;
+            height: 2px;
+            margin: 3px 0;
+        }
+        &__list {
+            display: flex;
+            justify-content: space-between;
+
+            margin-left: 22px;
+        }
+        &__item {
+            text-align: center;
+            margin: 0px 6px 0px;
+
+            :hover {
+                background-color: $orange;
+                color: #494949;
+            }
+        }
+        &__item a {
+            display: block;
+
+            font-family: "Brutal Type";
+            font-weight: 400;
+            font-size: 16px;
+
+            text-decoration: none;
+            padding: 5px 20px;
+            color: $black;
+        }
+        &__search {
+            background: url(../img/search.svg) no-repeat 22px;
+            width: 48px;
+            height: 48px;
+            margin-left: auto;
+            border: none;
+        }
+        &__search-tablet {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .header {
+        &__logo {
+            margin: 0px 12px 0px 30px;
+        }
+        &__text {
+            margin: 0px 0px 0px 12px;
+        }
+        &__login {
+            margin: 16px 16px 0px 5px;
+        }
+        .nav {
+            &__menu {
+                margin-left: 40px;
+            }
+            &__menu-item {
+                width: 12px;
+            }
+            &__list {
+                margin-left: 15px;
+            }
+            &__search {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    .header {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__logo {
+            position: relative;
+            left: 50%;
+
+            transform: translateX(-50%);
+            margin: 0;
+        }
+        &__logo-link {
+            display: none;
+        }
+        &__text {
+            display: none;
+        }
+        &__login {
+            margin: 10px 10px 0px 0px;
+        }
+
+        .nav {
+            &__menu {
+                position: absolute;
+                top: 16px;
+                left: -25px;
+
+                background: url(../img/header_menu_tablet.svg) no-repeat center;
+                width: 19px;
+                height: 16px;
+                cursor: pointer;
+            }
+            &__list {
+                justify-content: space-around;
+                flex: 1;
+
+                margin: 0;
+            }
+            &__search {
+                background: none;
+                min-width: 100px;
+                margin: 0;
+                padding: 5px 20px;
+            }
+            &__search-tablet {
+                display: block;
+
+                font-family: "Brutal Type";
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        &__wrapper {
+            max-height: 48px;
+        }
+        &__logo-link {
+            display: block;
+
+            background: url(../img/mobil_logo.svg) no-repeat center, url(../img/mobil_logo1.svg) no-repeat center;
+            width: 35px;
+            height: 34px;
+            margin-right: auto;
+            margin-left: 54px;
+        }
+        &__logo {
+            display: none;
+        }
+        &__login {
+            align-self: center;
+
+            margin: 0;
+            margin-right: 16px;
+            padding: 0;
+        }
+
+        .nav {
+            &__list {
+                flex: 1;
+                margin: 0px 10px 0px 10px;
+            }
+            &__item {
+                margin: 0;
+            }
+            &__item a {
+                font-family: "PT Sans Caption";
+                font-weight: 400;
+                font-size: 14px;
+
+                padding: 2px 6px;
+            }
+            &__search {
+                position: absolute;
+                top: 0;
+                right: 40px;
+
+                background: url(../img/mobil_search.svg) no-repeat center;
+                min-width: 50px;
+                padding: 0;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

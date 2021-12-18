@@ -1,0 +1,61 @@
+@font-face {
+    font-weight: 400;
+    font-family: "PT Sans";
+    src: url(../fonts/PTSans/Regular/PTSansRegular.woff2) format("woff2"),
+        url(../fonts/PTSans/Regular/PTSansRegular.woff) format("woff");
+}
+@font-face {
+    font-weight: 700;
+    font-family: "PT Sans";
+    src: url(../fonts/PTSans/Bold/PTSansBold.woff2) format("woff2"),
+        url(../fonts/PTSans/Bold/PTSansBold.woff) format("woff");
+}
+@font-face {
+    font-weight: 400;
+    font-family: "PT Sans Caption";
+    src: url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff2) format("woff2"),
+        url(../fonts/PT_Sans_Caption/Regular/PTSansCaptionRegular.woff) format("woff");
+}
+@font-face {
+    font-weight: 500;
+    font-family: "Brutal";
+    src: url(../fonts/Brutal/Medium/BrutalMedium.woff2) format("woff2"),
+        url(../fonts/Brutal/Medium/BrutalMedium.woff) format("woff");
+}
+@font-face {
+    font-weight: 700;
+    font-family: "Brutal";
+    src: url(../fonts/Brutal/Bold/BrutalBold.woff2) format("woff2"),
+        url(../fonts/Brutal/Bold/BrutalBold.woff) format("woff");
+}
+@font-face {
+    font-weight: 400;
+    font-family: "Brutal";
+    src: url(../fonts/Brutal/Regular/BrutalRegular.woff2) format("woff2"),
+        url(../fonts/Brutal/Regular/BrutalRegular.woff) format("woff");
+}
+body {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    color: #000000;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.body__wrapper {
+    max-width: 1200px;
+    @media (max-width: 1024px) {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: $black;
+}

@@ -1,0 +1,81 @@
+@import "../sass/variables.scss";
+
+.footer {
+    width: 73.8%;
+
+    &__series {
+        display: flex;
+        justify-content: space-between;
+
+        margin: 30px 0px 30px 0px;
+    }
+
+    &__title {
+        font-family: "PT Sans Caption";
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 22px;
+    }
+}
+.slider {
+    &__left {
+    }
+
+    &__right {
+    }
+}
+.series {
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+
+        box-sizing: border-box;
+        width: 48.16%;
+        height: 516px;
+        padding: 25px 22px 25px 0px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__list-bottom::before {
+        content: "";
+        position: absolute;
+        top: 80px;
+        left: 17px;
+
+        height: 376px;
+        border: 1px solid $grey;
+        border-radius: 50%;
+    }
+
+    &__item-bottom {
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+
+        margin: 0px 0px 18px 31px;
+    }
+    &__item-bottom span::after {
+        content: "";
+        position: absolute;
+        left: 13px;
+
+        width: 10px;
+        height: 10px;
+        background: $grey;
+        border-radius: 10px;
+    }
+
+    &__link-bottom {
+        margin: 0 auto;
+        width: 197px;
+    }
+}
