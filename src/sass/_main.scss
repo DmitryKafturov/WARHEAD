@@ -1,5 +1,4 @@
 .main {
-    display: none;
     &__body {
         display: flex;
         flex-wrap: wrap;
@@ -19,6 +18,20 @@
         max-width: 85.33%;
         height: 100px;
         margin: 0 auto;
+    }
+    &__text {
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+
+        margin: 30px 0px;
+    }
+    &__text span {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
     }
 
     @media (max-width: 1024px) {
