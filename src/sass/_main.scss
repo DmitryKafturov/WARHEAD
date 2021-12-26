@@ -1,12 +1,10 @@
 .main {
-    &__body {
-        display: flex;
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
-        max-width: 85.33%;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
+    max-width: 85.33%;
+    margin: 0 auto;
+    margin-bottom: 100px;
 
     &__title {
         font-family: "PT Sans Caption";
@@ -17,7 +15,6 @@
         padding-top: 40px;
         max-width: 85.33%;
         height: 100px;
-        margin: 0 auto;
     }
     &__text {
         font-family: "PT Sans";
