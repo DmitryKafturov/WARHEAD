@@ -1,0 +1,159 @@
+@import "../sass/variables.scss";
+
+.today-articles {
+    max-width: 73.43%;
+    margin: 0px 10px 0px 0px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+
+        margin-top: 25px;
+
+        span {
+            font-family: "PT Sans";
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+}
+
+.article {
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        background-size: cover;
+        height: 492px;
+        padding: 85px 20px 30px 20px;
+        color: $white;
+    }
+
+    &__subtitle {
+        font-family: "Brutal Type";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.article--wide {
+    .hover-link {
+        background: url(../img/main_left_big.svg) no-repeat center;
+    }
+
+    .article__title {
+        background: url(../img/do_it_yourself.svg) no-repeat center;
+        width: 118px;
+        height: 24px;
+        margin: 60px 0px 0px 0px;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    max-width: 100%;
+    margin: 0px 0px 25px 0px;
+}
+
+.article--middle {
+    .hover-link {
+        background: url(../img/main_left_middle.svg) no-repeat center;
+    }
+
+    .article__title {
+        background: url(../img/middle_iron.svg) no-repeat center;
+        width: 118px;
+        height: 24px;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .article__text {
+        margin-top: 50px;
+    }
+
+    width: 64.52%;
+    margin: 0px 10px 0px 0px;
+}
+
+.article--narrow {
+    .hover-link {
+        background: url(../img/main_left_small.svg) no-repeat center;
+    }
+
+    .article__title {
+        background: url(../img/middle_iron.svg) no-repeat center;
+        width: 118px;
+        height: 24px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .copyright {
+        margin-top: 140px;
+    }
+
+    width: 32.1%;
+    margin: 0px 0px 0px 15px;
+}
+.copyright {
+    &__author {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    &__author span {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    &__socials {
+        &_margin {
+            margin: 10px 10px 30px 0px;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+
+    &__item {
+        margin: 0px 10px 0px 0px;
+        color: $white;
+    }
+
+    &__item img {
+        margin: 0px 5px 0px 0px;
+    }
+
+    &__item span {
+        font-family: "PT Sans Caption";
+        font-weight: 400;
+        font-size: 10px;
+    }
+}
