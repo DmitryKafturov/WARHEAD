@@ -22,7 +22,9 @@
                 ​компаний ​и небольших ​фирм, ​а также ​всем ​тем, ​для кого ​IT — ​это не просто ​две
                 буквы ​алфавита.
             </p>
-            <button class="header__login">Вход</button>
+            <button class="header__login">
+                Вход
+            </button>
         </div>
         <nav class="header__nav nav">
             <div class="nav__menu"></div>
@@ -34,261 +36,316 @@
                 <li class="nav__item"><a href="#">Рубрики</a></li>
             </ul>
             <button class="nav__search">
-                <span class="nav__search-tablet">Поиск </span>
+                <span class="nav__search-tablet">
+                    Поиск
+                </span>
             </button>
         </nav>
     </header>
 
     <main class="main">
-        <h1 class="main__title">Сегодня в выпуске</h1>
-        <section class="today-articles">
-            <div class="today-articles__container">
-                <article class="article article--wide">
-                    <a href="#" class="article__link hover-link">
-                        <div class="article__title"></div>
-                        <h2 class="article__subtitle">
-                            Блокнот с осциллографом и
-                            генератором частот (звуковой картой)
-                        </h2>
-                        <p class="article__text">
-                            Решил немного написать про свою поделку. Несколько раз попадались
-                            разнообразные diy линейки. Захотелось сделать себе что-то подобное,
-                            многофункциональное. Форм-фактор линейки мне не очень подходил, решил
-                            сделать в виде блокнота.
-                        </p>
-                        <div class="copyright">
-                            <p class="copyright__author">GMaksim2008 / <span>марта, 12:15</span> </p>
-                            <ul class="copyright__socials socials">
-                                <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                                </li>
-                                <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                                </li>
-                                <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                                <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </article>
-                <article class="article article--middle">
-                    <a href="#" class="article__link hover-link">
-                        <div class="article__title"></div>
-                        <h2 class="article__subtitle">
-                            Древности: удаленная работа на устройствах 1998 года
-                        </h2>
-                        <p class="article__text">
-                            Поговорим о старых железках. В 2020 году у нас есть
-                            множество инструментов удаленной работы — от традиционной
-                            электронной почты, до весьма совершенных мессенджеров, веб-конференций с...
-                        </p>
-                        <div class="copyright">
-                            <p class="copyright__author">f15 / <span>марта, 12:15</span> </p>
-                            <ul class="copyright__socials socials">
-                                <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                                </li>
-                                <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                                </li>
-                                <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                                <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </article>
-                <article class="article article--narrow">
-                    <a href="#" class="article__link hover-link">
-                        <div class="article__title"></div>
-                        <h2 class="article__subtitle">
-                            Кластер Elasticsearch на 200 ТБ+
-                        </h2>
-                        <div class="copyright">
-                            <p class="copyright__author">entropicus / <span>марта, 12:15</span> </p>
-                            <ul class="copyright__socials socials">
-                                <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                                </li>
-                                <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                                </li>
-                                <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                                <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <p class="today-articles__text">
-                На сегодня это всё! Приходите завтра почитать <span> об эффективной работе
-                    из дома, о том как Crash Bandicoot взламывал Playstation, о том с
-                    чего начиналось IT и об анатомии таблиц LuaJIT и особенностях их
-                    использования.</span>
-            </p>
-        </section>
+        <div class="main__articles">
+            <h1 class="main__title">
+                Сегодня в выпуске
+            </h1>
+            <section class="today-articles">
+                <div class="today-articles__container">
+                    <article class="article article--wide">
+                        <a href="#" class="article__link hover-link">
+                            <div class="article__title">
+                                сделай сам
+                            </div>
+                            <h2 class="article__subtitle">
+                                Блокнот с осциллографом и
+                                генератором частот (звуковой картой)
+                            </h2>
+                            <p class="article__text">
+                                Решил немного написать про свою поделку. Несколько раз попадались
+                                разнообразные diy линейки. Захотелось сделать себе что-то подобное,
+                                многофункциональное. Форм-фактор линейки мне не очень подходил, решил
+                                сделать в виде блокнота.
+                            </p>
+                            <div class="article__extra-info">
+                                <div class="article__meta">
+                                    <address class="article__author">GMaksim2008 / </address>
+                                    <time class="article__date"> 22 марта, 12:15</time>
+                                </div>
+                                <ul class="article__socials socials">
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-eye"></div><span
+                                            class="socials__views">4567</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-dog"></div>
+                                        <span class="social__views">12</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-message"></div> <span
+                                            class="social__views">45</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-link"></div><span
+                                            class="social__views">678</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="article article--middle">
+                        <a href="#" class="article__link hover-link">
+                            <div class="article__title">
+                                железо
+                            </div>
+                            <h2 class="article__subtitle">
+                                Древности: удаленная работа на устройствах 1998 года
+                            </h2>
+                            <p class="article__text">
+                                Поговорим о старых железках. В 2020 году у нас есть
+                                множество инструментов удаленной работы — от традиционной
+                                электронной почты, до весьма совершенных мессенджеров, веб-конференций с...
+                            </p>
+                            <div class="article__extra-info">
+                                <div class="article__meta">
+                                    <address class="article__author">f15 /</address>
+                                    <time class="article__date">22 марта, 12:15</time>
+                                </div>
+                                <ul class="article__socials socials">
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-eye"></div><span
+                                            class="socials__views">4567</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-dog"></div>
+                                        <span class="social__views">12</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-message"></div> <span
+                                            class="social__views">45</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-link"></div><span
+                                            class="social__views">678</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="article article--narrow">
+                        <a href="#" class="article__link hover-link">
+                            <div class="article__title">
+                                железо
+                            </div>
+                            <h2 class="article__subtitle">
+                                Кластер Elasticsearch на 200 ТБ+
+                            </h2>
+                            <div class="article__extra-info">
+                                <div class="article__meta">
+                                    <address class="article__author">entropicus /</address>
+                                    <time class="article__date">22 марта, 12:15</time>
+                                </div>
+                                <ul class="article__socials socials">
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-eye"></div><span
+                                            class="socials__views">4567</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-dog"></div>
+                                        <span class="social__views">12</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-message"></div> <span
+                                            class="social__views">45</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon-link"></div><span
+                                            class="social__views">678</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <p class="today-articles__text">
+                    На сегодня это всё! Приходите завтра почитать <span class="today-articles__text-bold"> об
+                        эффективной работе
+                        из дома, о том как Crash Bandicoot взламывал Playstation, о том с
+                        чего начиналось IT и об анатомии таблиц LuaJIT и особенностях их
+                        использования.</span>
+                </p>
+            </section>
 
-        <selection class="main__best-articales">
-            <ul class="main__best-list">
-                <li class="main__best-atem"><a href="#">Лучшее за месяц</a></li>
-                <li class="main__best-atem"><a href="#">Лучшее за год</a></li>
-                <li class="main__best-atem"><a href="#">Лучшее за все время</a></li>
-                <li class="main__best-slider slider">
-                    <button class="slider__left"></button>
-                    <button class="slider__right"></button>
-                </li>
-            </ul>
-            <div class="main__slider-articles articles">
-                <div class="articles__wrap articles__wrap_1">
-                    <h3 class="articles__title">AI против COVID-19: опыт Хубэя и Флориды
-                    </h3>
-                    <ul class="articles__socials socials">
-                        <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                        </li>
-                        <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                        </li>
-                        <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                        <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="articles__wrap articles__wrap_2">
-                    <h3 class="articles__title">Биологические проблемы багфикса</h3>
-                    <ul class="articles__socials socials">
-                        <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                        </li>
-                        <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                        </li>
-                        <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                        <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="articles__wrap articles__wrap_3">
-                    <h3 class="articles__title">Цели дня как инструмент управления командой
-                    </h3>
-                    <ul class="articles__socials socials">
-                        <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                        </li>
-                        <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                        </li>
-                        <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                        <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </selection>
-
-        <section class="sidebar">
-            <div class="series_aside container">
-                <div class="series__app-box app-box">
-                    <a href="#">Серии</a>
-                    <a href="#">Все серии</a>
-                </div>
-                <h4 class="series__title">HARDWARE против заблуждений</h4>
-                <ul class="series__list">
-                    <li class="series__item"><a href="#"><span></span> Мифы в IT-образовании</a></li>
-                    <li class="series__item"><a href="#"><span></span> У iPhone нет шансов,
-                            а компьютеры не нужны. Топ-8 самых вопиющих
-                            IT-заблуждений в истории</a></li>
-                    <li class="series__item"><a href="#"><span></span> У iPhone нет шансов, а компьютеры не
-                            нужны.
-                            Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
+            <selection class="main__best-articales">
+                <ul class="main__best-list">
+                    <li class="main__best-atem"><a href="#">Лучшее за месяц</a></li>
+                    <li class="main__best-atem"><a href="#">Лучшее за год</a></li>
+                    <li class="main__best-atem"><a href="#">Лучшее за все время</a></li>
+                    <li class="main__best-slider slider">
+                        <button class="slider__left"></button>
+                        <button class="slider__right"></button>
+                    </li>
                 </ul>
-                <a href="#" class="series__link orange-link">Читать 27 статей </a>
-            </div>
-            <div class="tests container">
-                <div class="tests__app-box app-box">
-                    <a href="#">тесты</a>
-                    <a href="#">Все тесты</a>
+                <div class="main__slider-articles articles">
+                    <div class="articles__wrap articles__wrap_1">
+                        <h3 class="articles__title">
+                            AI против COVID-19: опыт Хубэя и Флориды
+                        </h3>
+                        <ul class="articles__socials socials">
+                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
+                            </li>
+                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
+                            </li>
+                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
+                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="articles__wrap articles__wrap_2">
+                        <h3 class="articles__title">
+                            Биологические проблемы багфикса
+                        </h3>
+                        <ul class="articles__socials socials">
+                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
+                            </li>
+                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
+                            </li>
+                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
+                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="articles__wrap articles__wrap_3">
+                        <h3 class="articles__title">Цели дня как инструмент управления командой
+                        </h3>
+                        <ul class="articles__socials socials">
+                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
+                            </li>
+                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
+                            </li>
+                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
+                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tests__wrap">
-                    <h4 class="tests__title">Тест: Как хорошо вы знаете HTML и CSS?</h4>
-                    <ul class="tests__socials socials">
-                        <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                        </li>
-                        <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                        </li>
-                        <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                        <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                        </li>
-                    </ul>
+            </selection>
+            <section class="footer">
+                <div class="footer__series">
+                    <h2 class="footer__title">Серии</h2>
+                    <div class="footer__slider slider">
+                        <button class="slider__left"></button>
+                        <button class="slider__right"></button>
+                    </div>
                 </div>
-                <a href="#" class="tests__link orange-link">Пройти тест</a>
-            </div>
-            <div class="video container">
-                <div class="video__app-box app-box">
-                    <a href="#">Видео</a>
-                    <a href="#">Все видео</a>
+                <div class="series">
+                    <div class="series__container container">
+                        <h4 class=" series__title">HARDWARE против <br> заблуждений</h4>
+                        <ul class="series__list-bottom">
+                            <li class="series__item-bottom"><a href="#"><span></span> Мифы в IT-образовании</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> 25 самых популярных мифов о
+                                    программировании
+                                    и программистах
+                                    IT-заблуждений в истории</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
+                                    компьютеры не
+                                    нужны.
+                                    Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
+                                    компьютеры не
+                                    нужны.
+                                    Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
+                                    компьютеры не
+                                    нужны.
+                                    Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
+                        </ul>
+                        <a href="#" class="series__link-bottom orange-link">Читать 27 статей </a>
+                    </div>
+                    <div class="series__container container">
+                        <h4 class=" series__title">HARDWARE против <br> заблуждений</h4>
+                        <ul class="series__list-bottom">
+                            <li class="series__item-bottom"><a href="#"><span></span> Мифы в IT-образовании</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> 25 самых популярных мифов о
+                                    программировании
+                                    и программистах
+                                    IT-заблуждений в истории</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
+                                    компьютеры не
+                                    нужны.
+                                    Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
+                                    компьютеры не
+                                    нужны.
+                                    Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
+                            <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
+                                    компьютеры не
+                                    нужны.
+                                    Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
+                        </ul>
+                        <a href="#" class="series__link-bottom orange-link">Читать 27 статей </a>
+                    </div>
                 </div>
-                <div class="video__video"></div>
-                <h4 class="video__title">Учим HTML за 1 Час! </h4>
-            </div>
-            <div class="nvidia container">
-                <div class="nvidia__app-box app-box">
-                    <a href="#">надысь</a>
-                    <a href="#">Все новости</a>
-                </div>
-                <p class="nvidia__data">24 апреля</p>
-                <span class="nvidia__time">15:00</span>
-                <p class="nvidia__text">NVIDIA расширяет бесплатный 90-дневный
-                    доступ к ПО для поддержки удаленных работников</p>
-            </div>
-        </section>
-        <section class="footer">
-            <div class="footer__series">
-                <h2 class="footer__title">Серии</h2>
-                <div class="footer__slider slider">
-                    <button class="slider__left"></button>
-                    <button class="slider__right"></button>
-                </div>
-            </div>
-            <div class="series">
-                <div class="series__container container">
-                    <h4 class=" series__title">HARDWARE против <br> заблуждений</h4>
-                    <ul class="series__list-bottom">
-                        <li class="series__item-bottom"><a href="#"><span></span> Мифы в IT-образовании</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> 25 самых популярных мифов о
-                                программировании
-                                и программистах
+            </section>
+        </div>
+        <div class="main__sidebar">
+            <section class="sidebar">
+                <div class="series_aside container">
+                    <div class="series__app-box app-box">
+                        <a href="#">Серии</a>
+                        <a href="#">Все серии</a>
+                    </div>
+                    <h4 class="series__title">HARDWARE против заблуждений</h4>
+                    <ul class="series__list">
+                        <li class="series__item"><a href="#"><span></span> Мифы в IT-образовании</a></li>
+                        <li class="series__item"><a href="#"><span></span> У iPhone нет шансов,
+                                а компьютеры не нужны. Топ-8 самых вопиющих
                                 IT-заблуждений в истории</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
-                                компьютеры не
-                                нужны.
-                                Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
-                                компьютеры не
-                                нужны.
-                                Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
-                                компьютеры не
+                        <li class="series__item"><a href="#"><span></span> У iPhone нет шансов, а компьютеры не
                                 нужны.
                                 Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
                     </ul>
-                    <a href="#" class="series__link-bottom orange-link">Читать 27 статей </a>
+                    <a href="#" class="series__link orange-link">Читать 27 статей </a>
                 </div>
-                <div class="series__container container">
-                    <h4 class=" series__title">HARDWARE против <br> заблуждений</h4>
-                    <ul class="series__list-bottom">
-                        <li class="series__item-bottom"><a href="#"><span></span> Мифы в IT-образовании</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> 25 самых популярных мифов о
-                                программировании
-                                и программистах
-                                IT-заблуждений в истории</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
-                                компьютеры не
-                                нужны.
-                                Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
-                                компьютеры не
-                                нужны.
-                                Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
-                        <li class="series__item-bottom"><a href="#"><span></span> У iPhone нет шансов, а
-                                компьютеры не
-                                нужны.
-                                Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
-                    </ul>
-                    <a href="#" class="series__link-bottom orange-link">Читать 27 статей </a>
+                <div class="tests container">
+                    <div class="tests__app-box app-box">
+                        <a href="#">тесты</a>
+                        <a href="#">Все тесты</a>
+                    </div>
+                    <div class="tests__wrap">
+                        <h4 class="tests__title">Тест: Как хорошо вы знаете HTML и CSS?</h4>
+                        <ul class="tests__socials socials">
+                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
+                            </li>
+                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
+                            </li>
+                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
+                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="tests__link orange-link">Пройти тест</a>
                 </div>
-            </div>
-        </section>
+                <div class="video container">
+                    <div class="video__app-box app-box">
+                        <a href="#">Видео</a>
+                        <a href="#">Все видео</a>
+                    </div>
+                    <div class="video__video"></div>
+                    <h4 class="video__title">Учим HTML за 1 Час! </h4>
+                </div>
+                <div class="nvidia container">
+                    <div class="nvidia__app-box app-box">
+                        <a href="#">надысь</a>
+                        <a href="#">Все новости</a>
+                    </div>
+                    <p class="nvidia__data">24 апреля</p>
+                    <span class="nvidia__time">15:00</span>
+                    <p class="nvidia__text">NVIDIA расширяет бесплатный 90-дневный
+                        доступ к ПО для поддержки удаленных работников</p>
+                </div>
+            </section>
+        </div>
+
+
     </main>
 </body>
 

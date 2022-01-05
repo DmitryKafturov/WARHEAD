@@ -2,7 +2,8 @@
 
 .main {
     .today-articles {
-        max-width: 73.43%;
+        box-sizing: border-box;
+        width: 100%;
         margin: 0px 10px 0px 0px;
 
         &__today-articles {
@@ -66,7 +67,7 @@
 
         .article-big {
             background: url(../img/main_left_big.svg) no-repeat center;
-            max-width: 100%;
+            width: 100%;
             margin: 0px 0px 25px 0px;
             padding: 150px 0px 30px 20px;
 

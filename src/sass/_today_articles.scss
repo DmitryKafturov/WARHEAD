@@ -1,12 +1,10 @@
 @import "../sass/variables.scss";
 
 .today-articles {
-    max-width: 73.43%;
-    margin: 0px 10px 0px 0px;
-
     &__container {
         display: flex;
         flex-wrap: wrap;
+        gap: 27px;
     }
 
     &__text {
@@ -16,13 +14,10 @@
         line-height: 24px;
 
         margin-top: 25px;
-
-        span {
-            font-family: "PT Sans";
-            font-weight: 700;
-            font-size: 17px;
-            line-height: 24px;
-        }
+    }
+    &__text-bold {
+        font-family: inherit;
+        font-weight: 700;
     }
 }
 
@@ -33,12 +28,23 @@
         justify-content: space-between;
 
         box-sizing: border-box;
-        background-size: cover;
         height: 492px;
         padding: 85px 20px 30px 20px;
         color: $white;
     }
+    &__title {
+        font-family: "Brutal Type";
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        text-transform: uppercase;
 
+        background: $orange;
+        border-radius: 3px;
+        padding: 5px 10px;
+        max-width: 118px;
+    }
     &__subtitle {
         font-family: "Brutal Type";
         font-weight: 700;
@@ -57,85 +63,68 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-}
 
-.article--wide {
-    .hover-link {
-        background: url(../img/main_left_big.svg) no-repeat center;
-    }
-
-    .article__title {
-        background: url(../img/do_it_yourself.svg) no-repeat center;
-        width: 118px;
-        height: 24px;
-        margin: 60px 0px 0px 0px;
-    }
-
-    .copyright {
+    &__meta {
         display: flex;
-        justify-content: space-between;
     }
-
-    max-width: 100%;
-    margin: 0px 0px 25px 0px;
-}
-
-.article--middle {
-    .hover-link {
-        background: url(../img/main_left_middle.svg) no-repeat center;
-    }
-
-    .article__title {
-        background: url(../img/middle_iron.svg) no-repeat center;
-        width: 118px;
-        height: 24px;
-        margin: 0px 0px 25px 0px;
-    }
-
-    .article__text {
-        margin-top: 50px;
-    }
-
-    width: 64.52%;
-    margin: 0px 10px 0px 0px;
-}
-
-.article--narrow {
-    .hover-link {
-        background: url(../img/main_left_small.svg) no-repeat center;
-    }
-
-    .article__title {
-        background: url(../img/middle_iron.svg) no-repeat center;
-        width: 118px;
-        height: 24px;
-        margin: 0px 0px 20px 0px;
-    }
-
-    .copyright {
-        margin-top: 140px;
-    }
-
-    width: 32.1%;
-    margin: 0px 0px 0px 15px;
-}
-.copyright {
     &__author {
         font-family: "PT Sans";
         font-weight: 700;
         font-size: 15px;
     }
 
-    &__author span {
+    &__date {
         font-family: "PT Sans";
         font-weight: 700;
         font-size: 10px;
+
+        padding-left: 4px;
+    }
+}
+
+.article--wide {
+    background: url(../img/main_left_big.svg) no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+
+    .article__title {
+        margin: 60px 0px 0px 0px;
     }
 
-    &__socials {
-        &_margin {
-            margin: 10px 10px 30px 0px;
-        }
+    .article__extra-info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.article--middle {
+    background: url(../img/main_left_middle.svg) no-repeat center;
+    background-size: cover;
+
+    width: 64.52%;
+
+    .article__title {
+        margin: 0px 0px 25px 0px;
+    }
+
+    .article__text {
+        margin-top: 50px;
+    }
+}
+
+.article--narrow {
+    background: url(../img/main_left_small.svg) no-repeat center;
+    background-size: cover;
+
+    width: 32.1%;
+
+    .article__title {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .article__extra-info {
+        margin-top: 140px;
     }
 }
 
@@ -143,6 +132,7 @@
     display: flex;
 
     &__item {
+        display: flex;
         margin: 0px 10px 0px 0px;
         color: $white;
     }
@@ -150,7 +140,29 @@
     &__item img {
         margin: 0px 5px 0px 0px;
     }
+    &__icon {
+        width: 14px;
+        height: 22px;
+        margin: 0px 5px 0px 0px;
+    }
 
+    &__views {
+        font-family: "PT Sans Caption";
+        font-weight: 400;
+        font-size: 10px;
+    }
+    &__icon-eye {
+        background: url(../img/eye.svg) no-repeat center;
+    }
+    &__icon-dog {
+        background: url(../img/dog.svg) no-repeat center;
+    }
+    &__icon-message {
+        background: url(../img/message.svg) no-repeat center;
+    }
+    &__icon-link {
+        background: url(../img/link.svg) no-repeat center;
+    }
     &__item span {
         font-family: "PT Sans Caption";
         font-weight: 400;
