@@ -283,7 +283,7 @@ a {
   .main__articles {
     max-width: 800px; }
   .main__sidebar {
-    width: 251px;
+    min-width: 251px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-top: 100px;
@@ -294,6 +294,14 @@ a {
     padding: 0px 12px; }
     .main__articles {
       max-width: 730px; } }
+
+@media (max-width: 950px) {
+  .main {
+    padding: 0px; }
+    .main__articles {
+      max-width: 100%; }
+    .main__sidebar {
+      display: none; } }
 
 .today-articles__container {
   display: -webkit-box;
@@ -334,7 +342,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 492px;
-  padding: 82px 15px 40px 26px;
+  padding: 82px 15px 40px 20px;
   color: #ffffff; }
 
 .article__title {
@@ -454,17 +462,60 @@ a {
   .today-articles__container {
     gap: 22px; }
   .article--middle {
-    width: 354px; }
+    max-width: 354px; }
     .article--middle .article__text {
       display: none; }
     .article--middle .article__extra-info {
       padding-top: 155px; }
   .article--narrow {
     max-width: none;
-    width: 354px; }
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
     .article--narrow .article__subtitle {
       max-width: none;
       width: 225px; } }
+
+@media (max-width: 950px) {
+  .today-articles__container {
+    gap: 15px; }
+  .article__link {
+    height: 386px;
+    padding-bottom: 15px;
+    padding-top: 72px; }
+  .article__subtitle {
+    min-height: 82px; }
+  .article__extra-info {
+    padding-top: 115px; }
+  .article--wide .article__title {
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .article--wide .article__extra-info {
+    display: block; }
+  .article--wide .article__text {
+    display: none; }
+  .article--middle {
+    background: url(../img/middle_mobil_950.svg) no-repeat center;
+    background-size: cover;
+    max-width: none;
+    width: 100%; }
+    .article--middle .article__title {
+      margin-bottom: 30px; }
+    .article--middle .article__subtitle {
+      max-width: 500px; }
+    .article--middle .article__extra-info {
+      padding-top: 115px; }
+  .article--narrow {
+    background: url(../img/narrow_mobil_950.svg) no-repeat center;
+    background-size: cover;
+    width: 100%; }
+    .article--narrow .article__title {
+      margin-bottom: 30px; }
+    .article--narrow .article__subtitle {
+      width: 100%; }
+    .article--narrow .article__extra-info {
+      padding-top: 115px; } }
 
 .sidebar {
   display: none;

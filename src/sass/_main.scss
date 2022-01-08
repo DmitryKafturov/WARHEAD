@@ -14,7 +14,7 @@
         max-width: 800px;
     }
     &__sidebar {
-        width: 251px;
+        min-width: 251px;
         box-sizing: border-box;
         padding-top: 100px;
         border: 1px solid red;
@@ -25,6 +25,17 @@
         padding: 0px 12px;
         &__articles {
             max-width: 730px;
+        }
+    }
+}
+@media (max-width: 950px) {
+    .main {
+        padding: 0px;
+        &__articles {
+            max-width: 100%;
+        }
+        &__sidebar {
+            display: none;
         }
     }
 }
