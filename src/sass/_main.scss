@@ -39,3 +39,11 @@
         }
     }
 }
+@media (max-width: 950px) {
+    .main {
+        &__title {
+            font-size: 20px;
+            padding: 20px 10px 20px;
+        }
+    }
+}
