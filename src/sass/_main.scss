@@ -1,3 +1,5 @@
+@import "../sass/variables.scss";
+
 .main {
     display: flex;
     gap: 20px;
@@ -28,6 +30,7 @@
         }
     }
 }
+
 @media (max-width: 950px) {
     .main {
         padding: 0px;
@@ -39,7 +42,8 @@
         }
     }
 }
-@media (max-width: 950px) {
+
+@media (max-width: 650px) {
     .main {
         &__title {
             font-size: 20px;

@@ -6,13 +6,11 @@
         flex-wrap: wrap;
         gap: 25px;
     }
-
     &__text {
         font-family: "PT Sans";
         font-weight: 400;
         font-size: 17px;
         line-height: 24px;
-
         padding: 30px 0px;
     }
     &__text-bold {
@@ -54,7 +52,6 @@
 
         max-width: 640px;
     }
-
     &__text {
         font-family: "PT Sans";
         font-style: normal;
@@ -69,7 +66,6 @@
         word-wrap: break-word;
         -webkit-box-orient: vertical;
     }
-
     &__meta {
         display: flex;
     }
@@ -78,7 +74,6 @@
         font-weight: 700;
         font-size: 15px;
     }
-
     &__date {
         font-family: "PT Sans";
         font-weight: 700;
@@ -93,11 +88,9 @@
     background-size: cover;
 
     width: 100%;
-
     .article__title {
         margin: 72px 0px 0px 0px;
     }
-
     .article__extra-info {
         display: flex;
         justify-content: space-between;
@@ -109,11 +102,9 @@
     background-size: cover;
 
     max-width: 64.52%;
-
     .article__title {
         margin: 0px 0px 25px 0px;
     }
-
     .article__text {
         padding: 50px 0px 10px 0px;
     }
@@ -124,11 +115,9 @@
     background-size: cover;
 
     max-width: 32.1%;
-
     .article__title {
         margin: 0px 0px 20px 0px;
     }
-
     .article__extra-info {
         padding-top: 150px;
     }
@@ -136,19 +125,16 @@
 
 .socials {
     display: flex;
-
     &__item {
         display: flex;
         margin: 0px 10px 0px 0px;
         color: $white;
     }
-
     &__icon {
         width: 14px;
         height: 22px;
         margin: 0px 5px 0px 0px;
     }
-
     &__views {
         font-family: "PT Sans Caption";
         font-weight: 400;
@@ -167,13 +153,13 @@
         background: url(../img/link.svg) no-repeat center;
     }
 }
+
 @media (max-width: 1100px) {
     .today-articles {
         &__container {
             gap: 22px;
         }
     }
-
     .article--middle {
         max-width: 354px;
         .article__text {
@@ -192,6 +178,7 @@
         }
     }
 }
+
 @media (max-width: 950px) {
     .today-articles {
         &__container {
@@ -207,7 +194,6 @@
             padding-bottom: 15px;
             padding-top: 72px;
         }
-
         &__subtitle {
             min-height: 82px;
         }
@@ -239,7 +225,6 @@
         .article__subtitle {
             max-width: 500px;
         }
-
         .article__extra-info {
             padding-top: 115px;
         }
@@ -251,16 +236,15 @@
         .article__title {
             margin-bottom: 30px;
         }
-
         .article__subtitle {
             width: 100%;
         }
-
         .article__extra-info {
             padding-top: 115px;
         }
     }
 }
+
 @media (max-width: 650px) {
     .article {
         &__link {

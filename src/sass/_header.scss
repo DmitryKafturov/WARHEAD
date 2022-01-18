@@ -61,7 +61,7 @@
             width: 14px;
             height: 12px;
             margin-left: 47px;
-            cursor: pointer;
+            border: none;
         }
         &__menu-item {
             background-color: $black;
@@ -82,6 +82,7 @@
             :hover {
                 background-color: $orange;
                 color: #494949;
+                transition: opacity 0.4s linear;
             }
         }
         &__item a {

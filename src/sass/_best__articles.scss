@@ -1,0 +1,99 @@
+@import "../sass/variables.scss";
+
+.best-articles {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__best-button {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+
+        background-color: inherit;
+        margin-right: 40px;
+        padding-bottom: 4px;
+        border: none;
+        &:focus {
+            border-bottom: 2px solid $darker-orange;
+        }
+    }
+    &__best-button-mobil {
+        display: none;
+
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 17px;
+
+        background-color: inherit;
+        margin-right: 30px;
+        padding-bottom: 4px;
+        border: none;
+        &:focus {
+            border-bottom: 2px solid $darker-orange;
+        }
+    }
+    &__articles-best {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    line-height: 24px;
+}
+
+.best-article {
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 250px;
+        height: 177px;
+        padding: 20px 30px 20px 20px;
+    }
+    &__title {
+        font-family: "Brutal Type";
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        box-sizing: border-box;
+
+        color: $white;
+    }
+    &__socials {
+    }
+}
+
+.best-article--first {
+    background: url(../img/main_left_bottom1.svg) no-repeat center;
+    background-size: cover;
+}
+.best-article--second {
+    background: url(../img/main_left_bottom2.svg) no-repeat center;
+}
+.best-article--third {
+    .best-articles {
+        background: url(../img/best_third.svg) no-repeat center;
+        background-size: cover;
+    }
+    .best-article--fourth {
+        background: url(../img/main_left_bottom1.svg) no-repeat center;
+        background-size: cover;
+    }
+    @media (max-width: 550px) {
+        &__best-button {
+            display: none;
+        }
+        &__best-button-mobil {
+            display: block;
+        }
+    }
+}

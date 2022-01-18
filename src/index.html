@@ -27,7 +27,7 @@
             </button>
         </div>
         <nav class="header__nav nav">
-            <div class="nav__menu"></div>
+            <button class="nav__menu"></button>
             <ul class="nav__list">
                 <li class="nav__item"><a href="#">Новости</a></li>
                 <li class="nav__item"><a href="#">Видео</a></li>
@@ -36,25 +36,19 @@
                 <li class="nav__item"><a href="#">Рубрики</a></li>
             </ul>
             <button class="nav__search">
-                <span class="nav__search-tablet">
-                    Поиск
-                </span>
+                <span class="nav__search-tablet"> Поиск</span>
             </button>
         </nav>
     </header>
 
     <main class="main">
         <div class="main__articles">
-            <h1 class="main__title">
-                Сегодня в выпуске
-            </h1>
+            <h1 class="main__title"> Сегодня в выпуске</h1>
             <section class="today-articles">
                 <div class="today-articles__container">
                     <article class="article article--wide">
                         <a href="#" class="article__link hover-link">
-                            <div class="article__title">
-                                сделай сам
-                            </div>
+                            <div class="article__title">сделай сам</div>
                             <h2 class="article__subtitle">
                                 Блокнот с осциллографом и
                                 генератором частот (звуковой картой)
@@ -93,12 +87,8 @@
                     </article>
                     <article class="article article--middle">
                         <a href="#" class="article__link hover-link">
-                            <div class="article__title">
-                                железо
-                            </div>
-                            <h2 class="article__subtitle">
-                                Древности: удаленная работа на устройствах 1998 года
-                            </h2>
+                            <div class="article__title">железо</div>
+                            <h2 class="article__subtitle"> Древности: удаленная работа на устройствах 1998 года </h2>
                             <p class="article__text">
                                 Поговорим о старых железках. В 2020 году у нас есть
                                 множество инструментов удаленной работы — от традиционной
@@ -132,12 +122,8 @@
                     </article>
                     <article class="article article--narrow">
                         <a href="#" class="article__link hover-link">
-                            <div class="article__title">
-                                железо
-                            </div>
-                            <h2 class="article__subtitle">
-                                Кластер Elasticsearch на 200 ТБ+
-                            </h2>
+                            <div class="article__title"> железо</div>
+                            <h2 class="article__subtitle">Кластер Elasticsearch на 200 ТБ+</h2>
                             <div class="article__extra-info">
                                 <div class="article__meta">
                                     <address class="article__author">entropicus /</address>
@@ -174,57 +160,116 @@
                 </p>
             </section>
 
-            <selection class="main__best-articales">
-                <ul class="main__best-list">
-                    <li class="main__best-atem"><a href="#">Лучшее за месяц</a></li>
-                    <li class="main__best-atem"><a href="#">Лучшее за год</a></li>
-                    <li class="main__best-atem"><a href="#">Лучшее за все время</a></li>
-                    <li class="main__best-slider slider">
-                        <button class="slider__left"></button>
-                        <button class="slider__right"></button>
-                    </li>
-                </ul>
-                <div class="main__slider-articles articles">
-                    <div class="articles__wrap articles__wrap_1">
-                        <h3 class="articles__title">
-                            AI против COVID-19: опыт Хубэя и Флориды
-                        </h3>
-                        <ul class="articles__socials socials">
-                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                            </li>
-                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                            </li>
-                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                            </li>
-                        </ul>
+            <selection class="best-articles">
+                <div class="best-articles__slider slider">
+                    <div class="best-articles__wrapper">
+                        <label class="best-articles__list ">
+                            <button class="best-articles__best-button">Лучшее за месяц</button>
+                            <button class="best-articles__best-button-mobil">Лучшее за месяц</button>
+                            <button class="best-articles__best-button">Лучшее за год</button>
+                            <button class="best-articles__best-button-mobil"> Год</button>
+                            <button class="best-articles__best-button">Лучшее за все время</button>
+                            <button class="best-articles__best-button-mobil">Все время</button>
+                        </label>
+                        <div class="best-articles__buttons slider__buttons">
+                            <button class="slider__button-prev"></button>
+                            <button class="slider__button-next"></button>
+                        </div>
                     </div>
-                    <div class="articles__wrap articles__wrap_2">
-                        <h3 class="articles__title">
-                            Биологические проблемы багфикса
-                        </h3>
-                        <ul class="articles__socials socials">
-                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                            </li>
-                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                            </li>
-                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="articles__wrap articles__wrap_3">
-                        <h3 class="articles__title">Цели дня как инструмент управления командой
-                        </h3>
-                        <ul class="articles__socials socials">
-                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
-                            </li>
-                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
-                            </li>
-                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
-                            </li>
-                        </ul>
+                    <div class="best-articles__articles-best slider__list">
+                        <article class="best-article best-article--first">
+                            <a class="best-article__link hover-link" href="#">
+                                <h2 class="best-article__title">AI против COVID-19: опыт Хубэя и Флориды</h2>
+                                <ul class="best-article__socials socials">
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--eye"></div><span
+                                            class="socials__views">4567</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <span class="socials__views">12</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--message"></div> <span
+                                            class="socials__views">45</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--link"></div><span
+                                            class="socials__views">678</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </article>
+                        <article class="best-article best-article--second">
+                            <a class="best-article__link hover-link" href="#">
+                                <h2 class="best-article__title">Биологические проблемы багфикса</h2>
+                                <ul class="best-article__socials socials">
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--eye"></div><span
+                                            class="socials__views">4567</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <span class="socials__views">12</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--message"></div> <span
+                                            class="socials__views">45</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--link"></div><span
+                                            class="socials__views">678</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </article>
+                        <article class="best-article best-article--third">
+                            <a class="best-article__link hover-link" href="#">
+                                <h2 class="best-article__title">Цели дня как инструмент управления командой</h2>
+                                <ul class="best-article__socials socials">
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--eye"></div><span
+                                            class="socials__views">4567</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <span class="socials__views">12</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--message"></div> <span
+                                            class="socials__views">45</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--link"></div><span
+                                            class="socials__views">678</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </article>
+                        <article class="best-article best-article--fourth">
+                            <a class="best-article__link hover-link" href="#">
+                                <h2 class="best-article__title">AI против COVID-19: опыт Хубэя и Флориды</h2>
+                                <ul class="best-article__socials socials">
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--eye"></div><span
+                                            class="socials__views">4567</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <span class="socials__views">12</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--message"></div> <span
+                                            class="socials__views">45</span>
+                                    </li>
+                                    <li class="socials__item">
+                                        <div class="socials__icon socials__icon--link"></div><span
+                                            class="socials__views">678</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </article>
+
                     </div>
                 </div>
             </selection>

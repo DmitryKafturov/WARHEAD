@@ -1,0 +1,30 @@
+.slider {
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+
+        width: 55px;
+        margin-left: 78px;
+    }
+    &__button-prev {
+        background: url(../img/toggle_left.svg) no-repeat center;
+        width: 17px;
+        margin-right: 11px;
+        border: none;
+    }
+    &__button-next {
+        background: url(../img/toggle_right.svg) no-repeat center;
+        width: 17px;
+        border: none;
+    }
+    &__list {
+        overflow: hidden;
+    }
+}
+@media (max-width: 1100px) {
+    .slider {
+        &__buttons {
+            display: none;
+        }
+    }
+}
