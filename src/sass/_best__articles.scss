@@ -25,37 +25,38 @@
             border-bottom: 2px solid $darker-orange;
         }
     }
-    &__best-button-mobil {
+    &__button-mobil {
         display: none;
-
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 17px;
-
-        background-color: inherit;
-        margin-right: 30px;
-        padding-bottom: 4px;
-        border: none;
-        &:focus {
-            border-bottom: 2px solid $darker-orange;
-        }
     }
     &__articles-best {
         display: flex;
         justify-content: space-between;
         gap: 20px;
     }
-    line-height: 24px;
 }
 
 .best-article {
+    width: 250px;
+    height: 177px;
+
+    &:nth-child(1) {
+        background: url(../img/main_left_bottom1.svg) no-repeat center;
+    }
+    &:nth-child(2) {
+        background: url(../img/main_left_bottom2.svg) no-repeat center;
+    }
+    &:nth-child(3) {
+        background: url(../img/best_third.svg) no-repeat center;
+    }
+    &:nth-child(4) {
+        background: url(../img/main_left_bottom1.svg) no-repeat center;
+    }
     &__link {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        width: 250px;
-        height: 177px;
+        height: -webkit-fill-available;
         padding: 20px 30px 20px 20px;
     }
     &__title {
@@ -68,31 +69,14 @@
 
         color: $white;
     }
-    &__socials {
-    }
 }
 
-.best-article--first {
-    background: url(../img/main_left_bottom1.svg) no-repeat center;
-    background-size: cover;
-}
-.best-article--second {
-    background: url(../img/main_left_bottom2.svg) no-repeat center;
-}
-.best-article--third {
+@media (max-width: 550px) {
     .best-articles {
-        background: url(../img/best_third.svg) no-repeat center;
-        background-size: cover;
-    }
-    .best-article--fourth {
-        background: url(../img/main_left_bottom1.svg) no-repeat center;
-        background-size: cover;
-    }
-    @media (max-width: 550px) {
-        &__best-button {
+        &__button {
             display: none;
         }
-        &__best-button-mobil {
+        &__button-mobil {
             display: block;
         }
     }

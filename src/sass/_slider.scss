@@ -2,20 +2,19 @@
     &__buttons {
         display: flex;
         justify-content: space-between;
+        gap: 20px;
 
         width: 55px;
-        margin-left: 78px;
+    }
+    &__button {
+        width: 17px;
+        border: none;
     }
     &__button-prev {
         background: url(../img/toggle_left.svg) no-repeat center;
-        width: 17px;
-        margin-right: 11px;
-        border: none;
     }
     &__button-next {
         background: url(../img/toggle_right.svg) no-repeat center;
-        width: 17px;
-        border: none;
     }
     &__list {
         overflow: hidden;

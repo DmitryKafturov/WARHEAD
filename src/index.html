@@ -22,9 +22,7 @@
                 ​компаний ​и небольших ​фирм, ​а также ​всем ​тем, ​для кого ​IT — ​это не просто ​две
                 буквы ​алфавита.
             </p>
-            <button class="header__login">
-                Вход
-            </button>
+            <button class="header__login"> Вход </button>
         </div>
         <nav class="header__nav nav">
             <button class="nav__menu"></button>
@@ -36,7 +34,7 @@
                 <li class="nav__item"><a href="#">Рубрики</a></li>
             </ul>
             <button class="nav__search">
-                <span class="nav__search-tablet"> Поиск</span>
+                <span class="nav__search-tablet"> Поиск </span>
             </button>
         </nav>
     </header>
@@ -66,20 +64,20 @@
                                 </div>
                                 <ul class="article__socials socials">
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--eye"></div><span
-                                            class="socials__views">4567</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">4567</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <div class="socials__icon"></div>
                                         <span class="socials__views">12</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--message"></div> <span
-                                            class="socials__views">45</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">45</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--link"></div><span
-                                            class="socials__views">678</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">678</span>
                                     </li>
                                 </ul>
                             </div>
@@ -101,20 +99,20 @@
                                 </div>
                                 <ul class="article__socials socials">
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--eye"></div><span
-                                            class="socials__views">4567</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">4567</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <div class="socials__icon"></div>
                                         <span class="socials__views">12</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--message"></div> <span
-                                            class="socials__views">45</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">45</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--link"></div><span
-                                            class="socials__views">678</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">678</span>
                                     </li>
                                 </ul>
                             </div>
@@ -131,20 +129,20 @@
                                 </div>
                                 <ul class="article__socials socials">
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--eye"></div><span
-                                            class="socials__views">4567</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">4567</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <div class="socials__icon"></div>
                                         <span class="socials__views">12</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--message"></div> <span
-                                            class="socials__views">45</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">45</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--link"></div><span
-                                            class="socials__views">678</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">678</span>
                                     </li>
                                 </ul>
                             </div>
@@ -163,17 +161,25 @@
             <selection class="best-articles">
                 <div class="best-articles__slider slider">
                     <div class="best-articles__wrapper">
-                        <label class="best-articles__list ">
-                            <button class="best-articles__best-button">Лучшее за месяц</button>
-                            <button class="best-articles__best-button-mobil">Лучшее за месяц</button>
-                            <button class="best-articles__best-button">Лучшее за год</button>
-                            <button class="best-articles__best-button-mobil"> Год</button>
-                            <button class="best-articles__best-button">Лучшее за все время</button>
-                            <button class="best-articles__best-button-mobil">Все время</button>
-                        </label>
+                        <ul class="best-articles__list ">
+                            <li class="best-articles__item">
+                                <button class="best-articles__best-button">Лучшее за месяц</button>
+                            </li>
+                            <li class="best-articles__item">
+                                <button class="best-articles__best-button">
+                                    <span class="best-articles__button">Лучшее за год</span>
+                                    <span class="best-articles__button-mobil">Год</span>
+                                </button>
+                            </li>
+                            <button class="best-articles__best-button">
+                                <span class="best-articles__button">Лучшее за всё время</span>
+                                <span class="best-articles__button-mobil">Все время</span>
+                            </button>
+                            </li>
+                        </ul>
                         <div class="best-articles__buttons slider__buttons">
-                            <button class="slider__button-prev"></button>
-                            <button class="slider__button-next"></button>
+                            <button class="slider__button slider__button-prev"></button>
+                            <button class="slider__button slider__button-next"></button>
                         </div>
                     </div>
                     <div class="best-articles__articles-best slider__list">
@@ -182,20 +188,20 @@
                                 <h2 class="best-article__title">AI против COVID-19: опыт Хубэя и Флориды</h2>
                                 <ul class="best-article__socials socials">
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--eye"></div><span
-                                            class="socials__views">4567</span>
+                                        <div class="socials__icon"> </div>
+                                        <span class="socials__views">4567</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <div class="socials__icon"></div>
                                         <span class="socials__views">12</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--message"></div> <span
-                                            class="socials__views">45</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">45</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--link"></div><span
-                                            class="socials__views">678</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">678</span>
                                     </li>
                                 </ul>
                             </a>
@@ -205,20 +211,20 @@
                                 <h2 class="best-article__title">Биологические проблемы багфикса</h2>
                                 <ul class="best-article__socials socials">
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--eye"></div><span
-                                            class="socials__views">4567</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">4567</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <div class="socials__icon"></div>
                                         <span class="socials__views">12</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--message"></div> <span
-                                            class="socials__views">45</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">45</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--link"></div><span
-                                            class="socials__views">678</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">678</span>
                                     </li>
                                 </ul>
                             </a>
@@ -228,48 +234,24 @@
                                 <h2 class="best-article__title">Цели дня как инструмент управления командой</h2>
                                 <ul class="best-article__socials socials">
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--eye"></div><span
-                                            class="socials__views">4567</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">4567</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--dog"></div>
+                                        <div class="socials__icon"></div>
                                         <span class="socials__views">12</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--message"></div> <span
-                                            class="socials__views">45</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">45</span>
                                     </li>
                                     <li class="socials__item">
-                                        <div class="socials__icon socials__icon--link"></div><span
-                                            class="socials__views">678</span>
+                                        <div class="socials__icon"></div>
+                                        <span class="socials__views">678</span>
                                     </li>
                                 </ul>
                             </a>
                         </article>
-                        <article class="best-article best-article--fourth">
-                            <a class="best-article__link hover-link" href="#">
-                                <h2 class="best-article__title">AI против COVID-19: опыт Хубэя и Флориды</h2>
-                                <ul class="best-article__socials socials">
-                                    <li class="socials__item">
-                                        <div class="socials__icon socials__icon--eye"></div><span
-                                            class="socials__views">4567</span>
-                                    </li>
-                                    <li class="socials__item">
-                                        <div class="socials__icon socials__icon--dog"></div>
-                                        <span class="socials__views">12</span>
-                                    </li>
-                                    <li class="socials__item">
-                                        <div class="socials__icon socials__icon--message"></div> <span
-                                            class="socials__views">45</span>
-                                    </li>
-                                    <li class="socials__item">
-                                        <div class="socials__icon socials__icon--link"></div><span
-                                            class="socials__views">678</span>
-                                    </li>
-                                </ul>
-                            </a>
-                        </article>
-
                     </div>
                 </div>
             </selection>
