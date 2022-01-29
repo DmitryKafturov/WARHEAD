@@ -11,6 +11,9 @@
         display: flex;
         justify-content: space-between;
     }
+    &__item {
+        padding-right: 46px;
+    }
     &__best-button {
         font-family: "PT Sans";
         font-weight: 700;
@@ -18,7 +21,7 @@
         line-height: 24px;
 
         background-color: inherit;
-        margin-right: 40px;
+        padding-left: 0;
         padding-bottom: 4px;
         border: none;
         &:focus {
@@ -57,7 +60,7 @@
         justify-content: space-between;
 
         height: -webkit-fill-available;
-        padding: 20px 30px 20px 20px;
+        padding: 18px 30px 14px 20px;
     }
     &__title {
         font-family: "Brutal Type";
@@ -71,13 +74,46 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1100px) {
+    .best-article {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .best-articles {
+        &__slider {
+            padding-left: 13px;
+            padding-top: 22px;
+        }
+        &__articles-best {
+            display: flex;
+            justify-content: start;
+        }
+    }
+    .best-article {
+        min-width: none;
+    }
+}
+
+@media (max-width: 500px) {
     .best-articles {
         &__button {
             display: none;
         }
         &__button-mobil {
             display: block;
+        }
+        &__item {
+            padding-right: 25px;
+        }
+        &__wrapper {
+            margin-bottom: 21px;
+        }
+    }
+    .article {
+        &__title {
+            width: 102px;
         }
     }
 }

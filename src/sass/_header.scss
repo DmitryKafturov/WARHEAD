@@ -6,7 +6,7 @@
 
         position: relative;
         align-items: center;
-        height: 176px;
+        height: 173px;
         max-width: 100%;
         background-color: $dark-blue;
     }
@@ -32,6 +32,7 @@
         display: box;
         word-wrap: break-word;
         -webkit-box-orient: vertical;
+        overflow: hidden;
 
         margin: 0px 0px 0px 28px;
         color: $white;
@@ -43,7 +44,7 @@
         font-size: 15px;
         font-weight: 700;
 
-        margin: 16px 16px 0px 10px;
+        margin: 8px 14px 0px 10px;
         border: none;
         background-color: $dark-blue;
         color: $white;
@@ -73,17 +74,11 @@
             display: flex;
             justify-content: space-between;
 
-            margin-left: 22px;
+            margin-left: 15px;
         }
         &__item {
             text-align: center;
             margin: 0px 6px 0px;
-
-            :hover {
-                background-color: $orange;
-                color: #494949;
-                transition: opacity 0.4s linear;
-            }
         }
         &__item a {
             display: block;
@@ -95,6 +90,18 @@
             text-decoration: none;
             padding: 5px 20px;
             color: $black;
+
+            &:hover {
+                border-radius: 2px;
+                background: $orange;
+                color: $white;
+                transition: background 0.4s ease;
+            }
+            &:not(:hover) {
+                border-radius: 2px;
+                background: inherit;
+                transition: background 0.3s ease;
+            }
         }
         &__search {
             background: url(../img/search.svg) no-repeat 22px;
@@ -115,10 +122,10 @@
             margin: 0px 12px 0px 30px;
         }
         &__text {
-            margin: 0px 0px 0px 12px;
+            margin: 9px 0px 0px 12px;
         }
         &__login {
-            margin: 16px 16px 0px 5px;
+            margin: 11px 9px 0px 5px;
         }
         .nav {
             &__menu {
@@ -128,7 +135,12 @@
                 width: 12px;
             }
             &__list {
-                margin-left: 15px;
+                margin: 0;
+                padding-top: 3px;
+                padding-left: 2px;
+            }
+            &__item a {
+                letter-spacing: normal;
             }
             &__search {
                 margin-right: 10px;
@@ -136,7 +148,7 @@
         }
     }
 }
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     .header {
         &__wrapper {
             display: flex;
@@ -171,16 +183,21 @@
                 cursor: pointer;
             }
             &__list {
-                justify-content: space-around;
-                flex: 1;
+                justify-content: space-between;
+                flex: 2;
 
-                margin: 0;
+                margin-left: 0;
+                padding-left: 14px;
+            }
+            &__item a {
+                padding: 0;
             }
             &__search {
+                flex: 0.5;
+
                 background: none;
-                min-width: 100px;
                 margin: 0;
-                padding: 5px 20px;
+                padding: 0;
             }
             &__search-tablet {
                 display: block;
@@ -188,12 +205,16 @@
                 font-family: "Brutal Type";
                 font-weight: 400;
                 font-size: 16px;
+                text-align: right;
+
+                padding-right: 13px;
+                padding-top: 4px;
             }
         }
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 500px) {
     .header {
         &__wrapper {
             max-height: 48px;
@@ -220,8 +241,8 @@
 
         .nav {
             &__list {
-                flex: 1;
                 margin: 0px 10px 0px 10px;
+                padding: 0;
             }
             &__item {
                 margin: 0;
@@ -230,8 +251,6 @@
                 font-family: "PT Sans Caption";
                 font-weight: 400;
                 font-size: 14px;
-
-                padding: 2px 6px;
             }
             &__search {
                 position: absolute;
@@ -245,6 +264,15 @@
                 span {
                     display: none;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .header {
+        .nav {
+            &__list {
+                margin: 0px 14px 0px 14px;
             }
         }
     }
