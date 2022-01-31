@@ -94,21 +94,15 @@
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
+    border-radius: 2px;
     padding: 5px 20px;
-    color: #000000; }
+    color: #000000;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
     .header .nav__item a:hover {
-      border-radius: 2px;
-      background: #faaf3f;
       color: #ffffff;
-      -webkit-transition: background 0.4s ease;
-      -o-transition: background 0.4s ease;
-      transition: background 0.4s ease; }
-    .header .nav__item a:not(:hover) {
-      border-radius: 2px;
-      background: inherit;
-      -webkit-transition: background 0.3s ease;
-      -o-transition: background 0.3s ease;
-      transition: background 0.3s ease; }
+      background: #faaf3f; }
   .header .nav__search {
     background: url(../img/search.svg) no-repeat 22px;
     width: 48px;
@@ -174,19 +168,19 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-flex: 2;
-    -webkit-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
     margin-left: 0;
-    padding-left: 14px; }
+    padding-left: 10px; }
   .header .nav__item a {
     padding: 0; }
   .header .nav__search {
-    -webkit-box-flex: 0.5;
-    -webkit-flex: 0.5;
-        -ms-flex: 0.5;
-            flex: 0.5;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     background: none;
     margin: 0;
     padding: 0; }
@@ -299,8 +293,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  padding-left: calc(50% - 530px);
-  padding-right: calc(50% - 530px); }
+  padding: 0 calc(50% - 530px); }
   .main__title {
     font-family: "PT Sans Caption";
     font-weight: 400;
@@ -308,7 +301,7 @@ a {
     letter-spacing: -0.02em;
     padding: 40px 0px; }
   .main__articles {
-    max-width: 791px; }
+    max-width: 790px; }
   .main__sidebar {
     width: 251px;
     -webkit-box-sizing: border-box;
@@ -318,8 +311,7 @@ a {
 
 @media (max-width: 1100px) {
   .main {
-    padding-left: calc(50% - 500px);
-    padding-right: calc(50% - 500px); }
+    padding: 0 calc(50% - 500px); }
     .main__title {
       padding: 35px 0px 42px 14px; }
     .main__articles {
@@ -455,10 +447,10 @@ a {
     padding-top: 6px; }
 
 .article--middle {
-  -webkit-box-flex: 2.1;
-  -webkit-flex: 2.1;
-      -ms-flex: 2.1;
-          flex: 2.1;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   background: url(../img/main_left_middle.svg) no-repeat center;
   background-size: cover; }
   .article--middle .article__title {
@@ -533,7 +525,7 @@ a {
     padding-top: 72px; }
   .article__subtitle {
     min-height: 82px; }
-  .article__extra-info {
+  .article .article__extra-info {
     padding-top: 115px;
     padding-left: 10px; }
   .article--wide {
@@ -545,8 +537,7 @@ a {
       margin-top: 0;
       margin-bottom: 22px; }
     .article--wide .article__extra-info {
-      display: block;
-      padding-top: 115px; }
+      display: block; }
     .article--wide .article__text {
       display: none; }
   .article--middle {
@@ -562,8 +553,6 @@ a {
       margin-bottom: 26px; }
     .article--middle .article__subtitle {
       max-width: 500px; }
-    .article--middle .article__extra-info {
-      padding-top: 115px; }
   .article--narrow {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -575,9 +564,7 @@ a {
     .article--narrow .article__title {
       margin-bottom: 26px; }
     .article--narrow .article__subtitle {
-      max-width: none; }
-    .article--narrow .article__extra-info {
-      padding-top: 115px; } }
+      max-width: none; } }
 
 @media (max-width: 1100px) and (max-width: 500px) {
   .today-articles__text {
@@ -592,17 +579,11 @@ a {
     padding-right: 3px; }
   .article__subtitle {
     font-size: 20px; }
-  .article__extra-info {
+  .article .article__extra-info {
     padding-top: 60px;
-    padding-left: 0; }
-  .article--wide .article__extra-info {
-    padding-top: 60px; }
-  .article--middle .article__extra-info {
-    padding-top: 60px; }
-  .article--narrow .article__extra-info {
-    padding-top: 60px; } }
+    padding-left: 0; } }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   .today-articles__text {
     padding-top: 27px; }
   .today-articles__slider {

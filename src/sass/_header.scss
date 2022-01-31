@@ -88,19 +88,14 @@
             font-size: 16px;
 
             text-decoration: none;
+            border-radius: 2px;
             padding: 5px 20px;
             color: $black;
+            transition: 0.3s ease;
 
             &:hover {
-                border-radius: 2px;
-                background: $orange;
                 color: $white;
-                transition: background 0.4s ease;
-            }
-            &:not(:hover) {
-                border-radius: 2px;
-                background: inherit;
-                transition: background 0.3s ease;
+                background: $orange;
             }
         }
         &__search {
@@ -184,16 +179,16 @@
             }
             &__list {
                 justify-content: space-between;
-                flex: 2;
+                flex: 4;
 
                 margin-left: 0;
-                padding-left: 14px;
+                padding-left: 10px;
             }
             &__item a {
                 padding: 0;
             }
             &__search {
-                flex: 0.5;
+                flex: 1;
 
                 background: none;
                 margin: 0;

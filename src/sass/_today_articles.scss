@@ -103,7 +103,7 @@
 }
 
 .article--middle {
-    flex: 2.1;
+    flex: 2;
 
     background: url(../img/main_left_middle.svg) no-repeat center;
     background-size: cover;
@@ -195,9 +195,11 @@
             &__subtitle {
                 min-height: 82px;
             }
-            &__extra-info {
-                padding-top: 115px;
-                padding-left: 10px;
+            .article {
+                &__extra-info {
+                    padding-top: 115px;
+                    padding-left: 10px;
+                }
             }
         }
         .article--wide {
@@ -209,7 +211,6 @@
             }
             .article__extra-info {
                 display: block;
-                padding-top: 115px;
             }
             .article__text {
                 display: none;
@@ -228,9 +229,6 @@
             .article__subtitle {
                 max-width: 500px;
             }
-            .article__extra-info {
-                padding-top: 115px;
-            }
         }
         .article--narrow {
             flex: 1;
@@ -243,9 +241,6 @@
             }
             .article__subtitle {
                 max-width: none;
-            }
-            .article__extra-info {
-                padding-top: 115px;
             }
         }
     }
@@ -267,30 +262,15 @@
             &__subtitle {
                 font-size: 20px;
             }
-            &__extra-info {
+            .article__extra-info {
                 padding-top: 60px;
                 padding-left: 0;
-            }
-        }
-        .article--wide {
-            .article__extra-info {
-                padding-top: 60px;
-            }
-        }
-        .article--middle {
-            .article__extra-info {
-                padding-top: 60px;
-            }
-        }
-        .article--narrow {
-            .article__extra-info {
-                padding-top: 60px;
             }
         }
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
     .today-articles {
         &__text {
             padding-top: 27px;

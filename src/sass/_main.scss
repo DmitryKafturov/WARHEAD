@@ -3,8 +3,7 @@
 .main {
     display: flex;
     gap: 20px;
-    padding-left: calc(50% - 530px);
-    padding-right: calc(50% - 530px);
+    padding: 0 calc(50% - 530px);
     &__title {
         font-family: "PT Sans Caption";
         font-weight: 400;
@@ -14,7 +13,7 @@
         padding: 40px 0px;
     }
     &__articles {
-        max-width: 791px;
+        max-width: 790px;
     }
     &__sidebar {
         width: 251px;
@@ -25,8 +24,7 @@
 }
 @media (max-width: 1100px) {
     .main {
-        padding-left: calc(50% - 500px);
-        padding-right: calc(50% - 500px);
+        padding: 0 calc(50% - 500px);
         &__title {
             padding: 35px 0px 42px 14px;
         }
