@@ -1,37 +1,64 @@
+@import "../sass/variables.scss";
+
 .main {
-    display: none;
-    &__body {
-        display: flex;
-        flex-wrap: wrap;
-
-        max-width: 85.33%;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-
+    display: flex;
+    gap: 20px;
+    padding: 0 calc(50% - 530px);
     &__title {
         font-family: "PT Sans Caption";
         font-weight: 400;
         font-size: 28px;
+        letter-spacing: -0.02em;
 
-        box-sizing: border-box;
-        padding-top: 40px;
-        max-width: 85.33%;
-        height: 100px;
-        margin: 0 auto;
+        padding: 40px 0px;
     }
-
-    @media (max-width: 1024px) {
-        margin: 0px 11px 0px 11px;
-        &__body {
-            max-width: 1024px;
-        }
+    &__articles {
+        max-width: 790px;
+    }
+    &__sidebar {
+        width: 251px;
+        box-sizing: border-box;
+        padding-top: 100px;
+        border: 1px solid red;
+    }
+}
+@media (max-width: 1100px) {
+    .main {
+        padding: 0 calc(50% - 500px);
         &__title {
-            max-width: 1024px;
-            height: 92px;
-            margin-left: 0;
-            padding-top: 28px;
-            letter-spacing: -1px;
+            padding: 35px 0px 42px 14px;
+        }
+        &__articles {
+            max-width: 730px;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .main {
+        padding: 0px;
+        &__articles {
+            max-width: 100%;
+        }
+        &__sidebar {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        &__title {
+            font-size: 20px;
+            padding: 20px 10px 20px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .main {
+        &__title {
+            padding-top: 22px;
+            padding-bottom: 22px;
         }
     }
 }

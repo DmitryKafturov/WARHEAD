@@ -1,0 +1,119 @@
+@import "../sass/variables.scss";
+
+.best-articles {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        padding-right: 46px;
+    }
+    &__best-button {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+
+        background-color: inherit;
+        padding-left: 0;
+        padding-bottom: 4px;
+        border: none;
+        &:focus {
+            border-bottom: 2px solid $darker-orange;
+        }
+    }
+    &__button-mobil {
+        display: none;
+    }
+    &__articles-best {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+.best-article {
+    width: 250px;
+    height: 177px;
+
+    &:nth-child(1) {
+        background: url(../img/main_left_bottom1.svg) no-repeat center;
+    }
+    &:nth-child(2) {
+        background: url(../img/main_left_bottom2.svg) no-repeat center;
+    }
+    &:nth-child(3) {
+        background: url(../img/best_third.svg) no-repeat center;
+    }
+    &:nth-child(4) {
+        background: url(../img/main_left_bottom1.svg) no-repeat center;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: -webkit-fill-available;
+        padding: 18px 30px 14px 20px;
+    }
+    &__title {
+        font-family: "Brutal Type";
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        box-sizing: border-box;
+
+        color: $white;
+    }
+}
+
+@media (max-width: 1100px) {
+    .best-article {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .best-articles {
+        &__slider {
+            padding-left: 13px;
+            padding-top: 22px;
+        }
+        &__articles-best {
+            display: flex;
+            justify-content: start;
+        }
+    }
+    .best-article {
+        min-width: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .best-articles {
+        &__button {
+            display: none;
+        }
+        &__button-mobil {
+            display: block;
+        }
+        &__item {
+            padding-right: 25px;
+        }
+        &__wrapper {
+            margin-bottom: 21px;
+        }
+    }
+    .article {
+        &__title {
+            width: 102px;
+        }
+    }
+}

@@ -34,23 +34,21 @@
     src: url(../fonts/Brutal/Regular/BrutalRegular.woff2) format("woff2"),
         url(../fonts/Brutal/Regular/BrutalRegular.woff) format("woff");
 }
+html {
+    background: #e5e5e5;
+}
 body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-style: normal;
+    background: #ffffff;
     color: #000000;
     max-width: 1200px;
     min-width: 320px;
     margin: 0 auto;
 }
-.body__wrapper {
-    max-width: 1200px;
-    @media (max-width: 1024px) {
-        max-width: 1024px;
-        margin: 0 auto;
-    }
-}
+
 img {
     max-width: 100%;
     height: auto;
