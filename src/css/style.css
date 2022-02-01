@@ -429,7 +429,6 @@ a {
 
 .article--wide {
   background: url(../img/main_left_big.svg) no-repeat center;
-  background-size: cover;
   width: 100%; }
   .article--wide .article__title {
     margin: 67px 0px 0px 0px; }
@@ -451,8 +450,7 @@ a {
   -webkit-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  background: url(../img/main_left_middle.svg) no-repeat center;
-  background-size: cover; }
+  background: url(../img/main_left_middle.svg) no-repeat center; }
   .article--middle .article__title {
     margin: 0px 0px 25px 0px; }
   .article--middle .article__text {
@@ -463,8 +461,7 @@ a {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: url(../img/main_left_small.svg) no-repeat center;
-  background-size: cover; }
+  background: url(../img/main_left_small.svg) no-repeat center; }
   .article--narrow .article__title {
     margin: 0px 0px 45px 0px; }
   .article--narrow .article__subtitle {
@@ -474,6 +471,11 @@ a {
             flex: 1; }
   .article--narrow .article__extra-info {
     padding-top: 150px; }
+
+.article--wide,
+.article--middle,
+.article--narrow {
+  background-size: cover; }
 
 @media (max-width: 1100px) {
   .today-articles__container {
@@ -485,31 +487,26 @@ a {
     padding-top: 87px; }
   .article--wide .article__title {
     margin-top: 63px; }
-  .article--middle {
+  .article--middle .article__text {
+    display: none; }
+  .article--middle .article__subtitle {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    .article--middle .article__title {
-      margin-bottom: 42px; }
-    .article--middle .article__text {
-      display: none; }
-    .article--middle .article__subtitle {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
+  .article--narrow .article__subtitle {
+    max-width: 220px; }
+  .article--middle,
   .article--narrow {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+    .article--middle .article__title,
     .article--narrow .article__title {
-      margin-bottom: 42px; }
-    .article--narrow .article__subtitle {
-      max-width: 220px; } }
+      margin-bottom: 42px; } }
 
-@media (max-width: 1100px) and (max-width: 1020px) {
+@media (max-width: 1020px) {
   .today-articles__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -528,45 +525,31 @@ a {
   .article .article__extra-info {
     padding-top: 115px;
     padding-left: 10px; }
-  .article--wide {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
-    .article--wide .article__title {
-      margin-top: 0;
-      margin-bottom: 22px; }
-    .article--wide .article__extra-info {
-      display: block; }
-    .article--wide .article__text {
-      display: none; }
+  .article--wide .article__title {
+    margin-top: 0;
+    margin-bottom: 22px; }
+  .article--wide .article__extra-info {
+    display: block; }
+  .article--wide .article__text {
+    display: none; }
   .article--middle {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     background: url(../img/middle_mobil_950.svg) no-repeat center;
-    background-size: cover;
-    max-width: none;
-    width: 100%; }
-    .article--middle .article__title {
-      margin-bottom: 26px; }
+    max-width: none; }
     .article--middle .article__subtitle {
       max-width: 500px; }
   .article--narrow {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    background: url(../img/narrow_mobil_950.svg) no-repeat center;
+    background: url(../img/narrow_mobil_950.svg) no-repeat center; }
+    .article--narrow .article__subtitle {
+      max-width: none; }
+  .article--middle,
+  .article--narrow {
     background-size: cover;
     width: 100%; }
+    .article--middle .article__title,
     .article--narrow .article__title {
-      margin-bottom: 26px; }
-    .article--narrow .article__subtitle {
-      max-width: none; } }
+      margin-bottom: 26px; } }
 
-@media (max-width: 1100px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .today-articles__text {
     padding-top: 31px; }
   .article__link {
@@ -586,8 +569,6 @@ a {
 @media (max-width: 320px) {
   .today-articles__text {
     padding-top: 27px; }
-  .today-articles__slider {
-    padding-top: 24px; }
   .article__link {
     padding-top: 114px;
     padding-bottom: 24px; }
