@@ -3,7 +3,7 @@
 .aside {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 24px;
 
     &__block {
         display: flex;
@@ -25,9 +25,7 @@
         text-transform: uppercase;
         box-sizing: border-box;
         background: $light-black;
-        width: 92px;
-        height: 24px;
-        padding-top: 2px;
+        padding: 0px 23px;
         text-align: center;
         color: $white;
         border-radius: 2px;
@@ -60,7 +58,7 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 20px;
 
         position: relative;
 
@@ -73,7 +71,6 @@
             left: -1px;
             width: 1px;
             height: 9px;
-            background: $grey;
             background: linear-gradient(180.28deg, rgba(255, 255, 255, 0) 0.23%, #ffffff 126.37%),
                 linear-gradient(180.28deg, rgba(255, 255, 255, 0) 0.23%, #ffffff 126.37%);
             transform: matrix(1, 0, 0, -1, 0, 0);
@@ -88,10 +85,9 @@
             background: linear-gradient(180.28deg, rgba(255, 255, 255, 0) 0.23%, #ffffff 74.8%);
         }
     }
+
     &__link {
         position: relative;
-    }
-    &__link span {
         &::before {
             content: "";
             position: absolute;
@@ -108,8 +104,7 @@
 
 .tests {
     background: url(../img/tests_right.svg) no-repeat center;
-    width: 215px;
-    height: 238px;
+    min-height: 238px;
     padding: 64px 20px 20px 20px;
     box-sizing: border-box;
 
@@ -129,7 +124,6 @@
     font-size: 14px;
 
     box-sizing: border-box;
-    max-width: 214px;
     background: $orange;
     text-align: center;
     padding: 5px;
@@ -139,8 +133,8 @@
 
 .video {
     background: url(../img/video_right2.png) no-repeat center, url(../img/video_right.png) no-repeat center;
-    width: 214px;
-    height: 146px;
+    max-width: 100%;
+    min-height: 146px;
     &__title {
         font-family: "PT Sans";
         font-weight: bold;
@@ -151,20 +145,18 @@
 }
 
 .nvidia {
+    font-family: "PT Sans";
     &__data {
-        font-family: "PT Sans";
         font-weight: 700;
         font-size: 15px;
         line-height: 21px;
     }
     &__time {
-        font-family: "PT Sans";
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
     }
     &__text {
-        font-family: "PT Sans";
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
