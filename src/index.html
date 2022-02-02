@@ -312,63 +312,93 @@
                 </div>
             </section>
         </div>
-        <div class="main__sidebar">
-            <section class="sidebar">
-                <div class="series_aside container">
-                    <div class="series__app-box app-box">
-                        <a href="#">Серии</a>
-                        <a href="#">Все серии</a>
+        <div class="main__aside">
+            <section class="aside">
+                <div class="aside__block">
+                    <div class="aside__header">
+                        <a class="aside__title" href="#">серии</a>
+                        <a class="aside__link" href="#">Все серии</a>
                     </div>
-                    <h4 class="series__title">HARDWARE против заблуждений</h4>
-                    <ul class="series__list">
-                        <li class="series__item"><a href="#"><span></span> Мифы в IT-образовании</a></li>
-                        <li class="series__item">
-                            <a href="#"><span></span> У iPhone нет шансов,
-                                а компьютеры не нужны. Топ-8 самых вопиющих
-                                IT-заблуждений в истории</a>
-                        </li>
-                        <li class="series__item"><a href="#"><span></span> У iPhone нет шансов, а компьютеры не
-                                нужны.
-                                Топ-8 самых вопиющих IT-заблуждений в истории</a></li>
-                    </ul>
-                    <a href="#" class="series__link orange-link">Читать 27 статей </a>
-                </div>
-                <div class="tests container">
-                    <div class="tests__app-box app-box">
-                        <a href="#">тесты</a>
-                        <a href="#">Все тесты</a>
-                    </div>
-                    <div class="tests__wrap">
-                        <h4 class="tests__title">Тест: Как хорошо вы знаете HTML и CSS?</h4>
-                        <ul class="tests__socials socials">
-                            <li class="socials__item"><img src="./img/eye.svg" alt="#"><span>4567</span>
+                    <div class="aside__series series">
+                        <h4 class="series__title">HARDWARE против заблуждений</h4>
+                        <ul class="series__list">
+                            <li class="series__item">
+                                <a class="series__link" href="#">
+                                    <span>
+                                        Мифы в IT-образовании
+                                    </span>
+                                </a>
                             </li>
-                            <li class="socials__item"><img src="./img/dog.svg" alt="#"><span>12</span>
+                            <li class="series__item">
+                                <a class="series__link" href="#">
+                                    <span> У iPhone нет шансов, а компьютеры не нужны.
+                                        Топ-8 самых вопиющих IT-заблуждений в истории
+                                    </span>
+                                </a>
                             </li>
-                            <li class="socials__item"> <img src="./img/message.svg" alt="#"><span>45</span></li>
-                            <li class="socials__item"><img src="./img/link.svg" alt="#"><span>678</span>
+                            <li class="series__item">
+                                <a class="series__link" href="#">
+                                    <span>
+                                        У iPhone нет шансов, а компьютеры не
+                                        нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                    </span>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="tests__link orange-link">Пройти тест</a>
+                    <a href="#" class="aside__footer orange-link">Читать 27 статей </a>
                 </div>
-                <div class="video container">
-                    <div class="video__app-box app-box">
-                        <a href="#">Видео</a>
-                        <a href="#">Все видео</a>
+                <div class="aside__block">
+                    <div class="aside__header">
+                        <a class="aside__title" href="#">тесты</a>
+                        <a class="aside__link" href="#">Все тесты</a>
                     </div>
-                    <div class="video__video"></div>
-                    <h4 class="video__title">Учим HTML за 1 Час! </h4>
+                    <div class="aside__tests tests">
+                        <h4 class="tests__title">Тест: Как хорошо вы знаете HTML и CSS?</h4>
+                        <ul class="tests__socials socials">
+                            <li class="socials__item">
+                                <div class="socials__icon"></div>
+                                <span class="socials__views">4567</span>
+                            </li>
+                            <li class="socials__item">
+                                <div class="socials__icon"></div>
+                                <span class="socials__views">12</span>
+                            </li>
+                            <li class="socials__item">
+                                <div class="socials__icon"></div>
+                                <span class="socials__views">45</span>
+                            </li>
+                            <li class="socials__item">
+                                <div class="socials__icon"></div>
+                                <span class="socials__views">678</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="aside__footer orange-link">Пройти тест</a>
                 </div>
-                <div class="nvidia container">
-                    <div class="nvidia__app-box app-box">
-                        <a href="#">надысь</a>
-                        <a href="#">Все новости</a>
+                <div class="aside__block">
+                    <div class="aside__header">
+                        <a class="aside__title" href="#">видео</a>
+                        <a class="aside__link" href="#">Все видео</a>
                     </div>
-                    <p class="nvidia__data">24 апреля</p>
-                    <span class="nvidia__time">15:00</span>
-                    <p class="nvidia__text">NVIDIA расширяет бесплатный 90-дневный
-                        доступ к ПО для поддержки удаленных работников</p>
+                    <a href="#">
+                        <div class="aside__video video"> </div>
+                    </a>
+                    <a href="#" class="aside__footer">Учим HTML за 1 Час!</a>
+                </div>
+                <div class="aside__block">
+                    <div class="aside__header">
+                        <a class="aside__title" href="#">надысь</a>
+                        <a class="aside__link" href="#">Все новости</a>
+                    </div>
+                    <div class="aside__nvidia nvidia">
+                        <p class="nvidia__data">24 апреля</p>
+                        <span class="nvidia__time">15:00</span>
+                        <p class="nvidia__text">
+                            NVIDIA расширяет бесплатный 90-дневный
+                            доступ к ПО для поддержки удаленных работников
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
