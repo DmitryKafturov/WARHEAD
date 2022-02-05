@@ -641,6 +641,11 @@ a {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .aside__video {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000; }
 
 .series {
   display: -webkit-box;
@@ -733,13 +738,8 @@ a {
 
 .video {
   background: url(../img/video_right2.png) no-repeat center, url(../img/video_right.png) no-repeat center;
-  max-width: 100%;
+  width: 100%;
   min-height: 146px; }
-  .video__title {
-    font-family: "PT Sans";
-    font-weight: bold;
-    font-size: 15px;
-    color: #000000; }
 
 .nvidia {
   font-family: "PT Sans"; }

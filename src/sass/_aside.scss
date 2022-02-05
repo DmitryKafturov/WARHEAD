@@ -42,6 +42,13 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    &__video {
+        font-family: "PT Sans";
+        font-weight: bold;
+        font-size: 15px;
+
+        color: $black;
+    }
 }
 
 .series {
@@ -85,7 +92,6 @@
             background: linear-gradient(180.28deg, rgba(255, 255, 255, 0) 0.23%, #ffffff 74.8%);
         }
     }
-
     &__link {
         position: relative;
         &::before {
@@ -133,15 +139,8 @@
 
 .video {
     background: url(../img/video_right2.png) no-repeat center, url(../img/video_right.png) no-repeat center;
-    max-width: 100%;
+    width: 100%;
     min-height: 146px;
-    &__title {
-        font-family: "PT Sans";
-        font-weight: bold;
-        font-size: 15px;
-
-        color: $black;
-    }
 }
 
 .nvidia {
