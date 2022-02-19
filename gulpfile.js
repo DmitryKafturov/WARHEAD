@@ -30,10 +30,6 @@ gulp.task('code', function () {
         .pipe(browserSync.reload({ stream: true }))
 });
 
-// gulp.task('js', function() {
-//   return gulp.src('./js/*.js')
-//   .pipe(browserSync.reload({ stream: true }))
-// });
 
 gulp.task('watch', function () {
     gulp.watch('./src/sass/**/*.scss', gulp.parallel('sass'));
